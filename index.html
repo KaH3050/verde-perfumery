@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verde Perfumery — Eau de Parfum, Miami</title>
+<meta name="description" content="Soft, long-lasting eaux de parfum blended in small batches. Shop online and order on WhatsApp. Free shipping over $100.">
+<meta name="theme-color" content="#9DBFEA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234B0F33'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23F4CFE2'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#9DBFEA;
+    --sky-2:#BFC6EF;
+    --lilac:#D9D0F2;
+    --blush:#F4CFE2;
+    --cloud:#F8F6FC;
+    --plum:#4B0F33;
+    --plum-2:#6E2450;
+    --ink:#2B1A2E;
+    --muted:#6F6379;
+    --line:#E8E2F0;
+    --gold:#B8925A;
+    --white:#FFFFFF;
+    --max:1240px;
+    --serif:"Cormorant Garamond",Georgia,serif;
+    --sans:"Jost",system-ui,sans-serif;
+    --shadow:0 18px 50px rgba(75,15,51,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cloud);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:clip;-webkit-font-smoothing:antialiased}
+  body.lock{overflow:hidden}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  input,select,textarea{font:inherit;color:inherit}
+  :focus-visible{outline:2px solid var(--plum);outline-offset:3px;border-radius:6px}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+  .eyebrow{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--plum-2)}
+  .eyebrow::after{content:"";width:56px;height:1px;background:currentColor;opacity:.5}
+  .serif{font-family:var(--serif)}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;color:var(--plum)}
+  h2{font-size:clamp(34px,4.6vw,54px);letter-spacing:-.01em}
+  h2 em{font-style:italic;color:var(--plum-2)}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:16px 28px;border-radius:999px;font-size:14px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;transition:transform .25s,background .25s,box-shadow .25s,color .25s;white-space:nowrap}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-plum{background:var(--plum);color:#fff;box-shadow:0 12px 30px rgba(75,15,51,.25)}
+  .btn-plum:hover{background:#5d1641;transform:translateY(-2px)}
+  .btn-plum .long{width:64px;transition:width .25s}
+  .btn-plum:hover .long{width:80px}
+  .btn-white{background:#fff;color:var(--plum)}
+  .btn-white:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(75,15,51,.15)}
+  .btn-line{border:1px solid rgba(75,15,51,.25);color:var(--plum)}
+  .btn-line:hover{border-color:var(--plum);transform:translateY(-2px)}
+  .link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--plum)}
+  .link svg{width:16px;height:16px;transition:transform .2s}
+  .link:hover svg{transform:translateX(4px)}
+
+  /* nav */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:60;padding:14px 12px 0;transition:padding .3s}
+  .nav-in{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:24px;padding:16px 36px;border-radius:24px;transition:background .3s,box-shadow .3s,padding .3s}
+  .nav.scrolled{padding-top:8px}
+  .nav.scrolled .nav-in{background:rgba(255,255,255,.78);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);box-shadow:0 8px 30px rgba(75,15,51,.08);padding:12px 28px}
+  .logo{display:flex;flex-direction:column;align-items:center;line-height:1;color:var(--plum)}
+  .logo b{font-family:var(--serif);font-weight:600;font-size:27px;letter-spacing:.2em;margin-right:-.2em}
+  .logo small{font-size:8.5px;letter-spacing:.36em;margin-top:5px;margin-right:-.36em;opacity:.8}
+  .nav-links{display:flex;gap:34px;margin:0 auto;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#3A2150}
+  .nav-links a{position:relative;padding:4px 0}
+  .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:currentColor;transform:scaleX(0);transition:transform .25s}
+  .nav-links a:hover::after{transform:scaleX(1)}
+  .nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+  .lang{display:flex;padding:3px;border-radius:999px;background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.7);font-size:12px;font-weight:500;letter-spacing:.08em}
+  .lang button{padding:6px 11px;border-radius:999px;color:var(--muted);transition:background .2s,color .2s}
+  .lang button[aria-pressed="true"]{background:var(--plum);color:#fff}
+  .icon-btn{position:relative;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.7);color:var(--plum);transition:background .2s,transform .2s}
+  .icon-btn:hover{background:#fff;transform:translateY(-1px)}
+  .icon-btn svg{width:20px;height:20px}
+  .badge{position:absolute;top:-3px;right:-3px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;background:var(--plum);color:#fff;font-size:11px;font-weight:600;display:grid;place-items:center;transform:scale(0);transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+  .badge.on{transform:scale(1)}
+  .badge.pop{animation:pop .4s}
+  @keyframes pop{50%{transform:scale(1.35)}}
+  .nav-cta{padding:12px 22px;font-size:12.5px}
+  .burger{display:none}
+  .mnav{position:fixed;inset:0;z-index:70;background:rgba(43,26,46,.35);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+  .mnav.open{opacity:1;visibility:visible}
+  .mnav-panel{position:absolute;top:12px;left:12px;right:12px;padding:22px 24px 28px;border-radius:24px;background:var(--cloud);box-shadow:var(--shadow);transform:translateY(-16px);transition:transform .3s}
+  .mnav.open .mnav-panel{transform:none}
+  .mnav-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+  .mnav a.ml{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:28px;color:var(--plum)}
+  .mnav .lang{margin-top:22px;width:max-content;background:#fff;border-color:var(--line)}
+
+  /* hero */
+  .hero{position:relative;margin:12px;border-radius:36px;overflow:hidden;isolation:isolate;--tint:#F4CFE2;background:#B9C8F0 url("img/hero-sky.webp") center 62%/cover no-repeat}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(50% 50% at 50% 60%,var(--tint) 0%,transparent 70%);opacity:.4;transition:background .9s;pointer-events:none}
+  .cloud.fly{left:0;top:var(--y);opacity:var(--o,.75);animation:fly var(--d,40s) linear var(--dl,0s) infinite}
+  @keyframes fly{from{transform:translateX(calc(-1 * var(--w)))}to{transform:translateX(100vw)}}
+  .sky{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .cloud{position:absolute;width:var(--w);height:calc(var(--w)*.38);filter:blur(10px);opacity:var(--o,.9);animation:drift var(--d,70s) linear infinite alternate}
+  .cloud::before,.cloud::after,.cloud i{content:"";position:absolute;border-radius:50%;background:radial-gradient(closest-side,#fff 55%,rgba(255,255,255,0))}
+  .cloud::before{width:55%;height:120%;left:8%;bottom:0}
+  .cloud::after{width:48%;height:140%;right:6%;bottom:0}
+  .cloud i{width:100%;height:70%;left:0;bottom:0}
+  @keyframes drift{to{transform:translateX(var(--dx,60px))}}
+  .bank{position:absolute;left:-10%;right:-10%;bottom:-120px;height:340px;filter:blur(18px);background:
+    radial-gradient(28% 60% at 12% 60%,#fff 40%,transparent 70%),
+    radial-gradient(26% 55% at 34% 72%,#fff 40%,transparent 70%),
+    radial-gradient(30% 62% at 58% 66%,#fff 40%,transparent 70%),
+    radial-gradient(26% 58% at 82% 60%,#fff 40%,transparent 70%),
+    radial-gradient(22% 50% at 98% 70%,#fff 40%,transparent 70%)}
+  .spark{position:absolute;width:4px;height:4px;border-radius:50%;background:#fff;box-shadow:0 0 10px 3px rgba(255,255,255,.8);animation:twinkle 4s ease-in-out infinite}
+  @keyframes twinkle{50%{opacity:.2;transform:scale(.6)}}
+  .blooms{position:absolute;left:-6px;bottom:-26px;width:min(260px,36vw);z-index:4;pointer-events:none;filter:drop-shadow(0 10px 16px rgba(120,70,140,.2))}
+  .blooms.r{left:auto;right:10px;bottom:-10px;width:min(150px,20vw)}
+
+  .hero-in{position:relative;z-index:2;max-width:1360px;margin:0 auto;min-height:max(720px,min(900px,100svh - 24px));padding:128px 56px 112px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr) minmax(0,1fr);align-items:center;gap:24px}
+  .hero-word{position:absolute;left:0;right:0;top:118px;z-index:0;text-align:center;font-family:var(--serif);font-weight:500;font-size:clamp(110px,18.5vw,300px);line-height:.8;letter-spacing:.06em;color:rgba(255,255,255,.72);pointer-events:none;white-space:nowrap;text-shadow:0 10px 60px rgba(120,100,180,.18);transition:opacity .5s,transform .7s}
+  .hero-kicker{position:absolute;left:56px;top:112px;z-index:3;font-size:clamp(22px,2.4vw,34px);font-weight:300;letter-spacing:.06em;text-transform:uppercase;color:var(--plum);line-height:1.1}
+  .hero-kicker small{display:block;font-size:11.5px;letter-spacing:.3em;margin-top:10px;font-weight:500;color:var(--plum-2)}
+  .orbit{position:absolute;left:4%;right:4%;top:46%;height:44%;z-index:1;pointer-events:none}
+  .orbit ellipse{fill:none;stroke:rgba(255,255,255,.7);stroke-width:1.2}
+  .glass{background:rgba(255,255,255,.26);backdrop-filter:blur(14px) saturate(1.25);-webkit-backdrop-filter:blur(14px) saturate(1.25);border:1px solid rgba(255,255,255,.6);border-radius:26px;box-shadow:0 20px 50px rgba(70,50,120,.12)}
+  .h-left{position:relative;z-index:3;justify-self:start;margin-top:120px}
+  .notes{width:200px;padding:26px 24px 28px;color:var(--ink);text-align:center}
+  .notes ul{list-style:none;text-align:left;font-size:15px;line-height:1.7}
+  .notes li::before{content:"•";margin-right:8px;color:var(--plum-2)}
+  .notes .arrow{width:12px;height:40px;margin:12px auto;opacity:.7}
+  .notes .size{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--plum)}
+  .notes .price{font-family:var(--serif);font-style:italic;font-size:44px;line-height:1;color:var(--plum)}
+  .h-mid{position:relative;z-index:2;display:grid;place-items:center}
+  .stage{position:relative;width:min(460px,100%);aspect-ratio:2/3}
+  .stage .bottle{position:absolute;inset:0;transform:rotate(9deg);filter:drop-shadow(0 40px 36px rgba(75,15,51,.22));transition:opacity .45s,transform .6s cubic-bezier(.3,.8,.3,1)}
+  .stage .bottle svg{width:100%;height:100%;animation:float 6s ease-in-out infinite}
+  .stage.out .bottle{opacity:0;transform:rotate(16deg) translateY(30px) scale(.94)}
+  @keyframes float{50%{transform:translateY(-14px)}}
+  .puff{position:absolute;left:-14%;right:-14%;bottom:-6%;height:24%;filter:blur(12px);background:radial-gradient(40% 60% at 30% 60%,#fff 45%,transparent 72%),radial-gradient(42% 66% at 66% 58%,#fff 45%,transparent 72%),radial-gradient(30% 50% at 50% 80%,#fff 50%,transparent 72%);z-index:2}
+  .h-right{position:relative;z-index:3;display:flex;flex-direction:column;gap:18px;margin-top:150px}
+  .desc{padding:26px 28px}
+  .desc h1{font-size:28px;font-style:italic;font-weight:500;letter-spacing:.02em;text-transform:uppercase;color:var(--plum);margin-bottom:12px}
+  .desc p{font-size:15px;color:#4A3A52;line-height:1.65}
+  .h-cta{width:100%;justify-content:space-between;padding:18px 30px}
+  .thumbs{display:flex;align-items:center;gap:10px}
+  .thumbs-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;flex:1}
+  .thumb{padding:8px 6px 10px;border-radius:20px;background:rgba(255,255,255,.55);border:2px solid rgba(255,255,255,.75);transition:transform .25s,background .25s,border-color .25s;text-align:center}
+  .thumb:hover{transform:translateY(-3px);background:rgba(255,255,255,.8)}
+  .thumb[aria-current="true"]{background:#fff;border-color:var(--plum-2)}
+  .thumb svg{height:86px;margin:0 auto}
+  .thumb span{display:block;font-family:var(--serif);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--plum);margin-top:2px;line-height:1.1}
+  .round-arrow{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.8);color:var(--plum);transition:background .2s}
+  .round-arrow:hover{background:#fff}
+  .round-arrow svg{width:14px;height:14px}
+  .hero-text-fade{transition:opacity .35s}
+  .fading .hero-text-fade{opacity:0}
+  .fading .hero-word{opacity:0;transform:translateY(16px)}
+
+  /* features */
+  .features{position:relative;z-index:5;max-width:1160px;margin:-52px auto 0;padding:0 24px}
+  .features-in{display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:999px;box-shadow:var(--shadow);padding:22px 30px}
+  .feat{display:flex;align-items:center;justify-content:center;gap:14px;font-size:14px;font-weight:500;line-height:1.25;color:var(--ink);padding:4px 10px;border-left:1px solid var(--line)}
+  .feat:first-child{border-left:0}
+  .feat svg{width:30px;height:30px;flex:none;color:var(--plum-2)}
+
+  section{scroll-margin-top:90px}
+  .sec{padding:110px 0 0}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
+  .sec-head h2{margin-top:14px}
+
+  /* collections */
+  .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .col{position:relative;height:340px;border-radius:26px;overflow:hidden;text-align:left;isolation:isolate;box-shadow:var(--shadow);transition:transform .35s}
+  .col:hover{transform:translateY(-6px)}
+  .col .bg{position:absolute;inset:0;z-index:-2}
+  .col .b{position:absolute;right:-6%;top:6%;width:66%;transform:rotate(7deg);transition:transform .5s;filter:drop-shadow(0 20px 18px rgba(43,26,46,.22))}
+  .col:hover .b{transform:rotate(3deg) translateY(-8px) scale(1.04)}
+  .col .b.set{right:2%;width:82%;top:10%}
+  .col-foot{position:absolute;left:12px;right:12px;bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 16px 16px 20px;border-radius:20px;background:rgba(255,255,255,.3);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.55);color:#fff}
+  .col-foot h3{color:#fff;font-size:28px}
+  .col-foot p{font-size:12.5px;opacity:.95;letter-spacing:.02em}
+  .col-foot .go{flex:none;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.8);display:grid;place-items:center;transition:background .25s,color .25s}
+  .col:hover .go{background:#fff;color:var(--plum)}
+  .col-foot .go svg{width:18px;height:18px}
+
+  /* signature */
+  .sig{position:relative;margin-top:110px;overflow:hidden;isolation:isolate;background:linear-gradient(105deg,#3A0B27 0%,#5E1B45 40%,#9A5A8F 75%,#C7A6DD 100%)}
+  .sig::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 70% at 74% 60%,rgba(255,214,236,.45),transparent 70%)}
+  .sig-in{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:30px;min-height:460px}
+  .sig .eyebrow{color:#F4CFE2}
+  .sig h2{color:#fff;font-size:clamp(40px,5.4vw,68px);margin:16px 0 16px}
+  .sig h2 em{color:#F4CFE2}
+  .sig p{color:rgba(255,255,255,.85);font-size:17px;max-width:440px;margin-bottom:30px}
+  .sig-art{position:relative;height:460px}
+  .sig-art .b{position:absolute;left:50%;bottom:6%;width:270px;transform:translateX(-50%) rotate(-6deg);filter:drop-shadow(0 30px 30px rgba(0,0,0,.35))}
+  .sig-art .ring{position:absolute;left:50%;top:50%;width:420px;height:420px;transform:translate(-50%,-46%);border-radius:50%;border:1px solid rgba(255,255,255,.35)}
+  .sig-art .ring.two{width:320px;height:320px;border-color:rgba(255,255,255,.2)}
+  .sig .cloud{--o:.25}
+  /* banner com a foto do Oud Prune (img/oud-banner.webp) */
+  .sig{margin:110px 12px 0;border-radius:36px;background:#F3DCEA url("img/oud-banner.webp") 70% center/cover no-repeat;box-shadow:0 24px 60px rgba(120,70,140,.18)}
+  .sig::before{background:linear-gradient(90deg,rgba(255,246,251,.82) 0%,rgba(255,246,251,.5) 34%,rgba(255,246,251,0) 56%)}
+  .sig .sky,.sig-art>*{display:none}
+  .sig-in{min-height:560px}
+  .sig .eyebrow{color:var(--plum-2)}
+  .sig h2{color:var(--plum)}
+  .sig h2 em{color:var(--plum-2)}
+  .sig p{color:#4A3A52}
+  .sig .btn-white{background:var(--plum);color:#fff;box-shadow:0 12px 30px rgba(75,15,51,.25)}
+  .sig .btn-white:hover{background:#5d1641}
+
+  /* shop */
+  .tools{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap}
+  .tab{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:14px;color:var(--muted);transition:all .2s}
+  .tab:hover{border-color:var(--plum-2);color:var(--plum)}
+  .tab[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+  .sort{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+  .sort select{appearance:none;padding:10px 38px 10px 16px;border-radius:999px;border:1px solid var(--line);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234B0F33' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 14px center/14px;color:var(--ink);cursor:pointer}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .card{position:relative;display:flex;flex-direction:column;background:#fff;border-radius:24px;box-shadow:0 8px 30px rgba(75,15,51,.06);overflow:hidden;transition:transform .3s,box-shadow .3s;animation:rise .5s both}
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}}
+  .card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .card-img{position:relative;aspect-ratio:1/1;display:grid;place-items:center;cursor:pointer}
+  .card-img .b{height:84%;transition:transform .4s;filter:drop-shadow(0 16px 14px rgba(43,26,46,.16))}
+  .card:hover .card-img .b{transform:translateY(-6px) rotate(-3deg)}
+  .card-img .b.set{width:88%;height:auto}
+  .tag{position:absolute;left:14px;top:14px;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.85);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--plum)}
+  .heart{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.85);color:var(--plum);transition:transform .2s}
+  .heart:hover{transform:scale(1.1)}
+  .heart svg{width:19px;height:19px}
+  .heart[aria-pressed="true"] svg{fill:var(--plum)}
+  .card-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:4px;flex:1}
+  .card-body h3{font-size:24px;cursor:pointer}
+  .fam{font-size:13px;color:var(--muted)}
+  .stars{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+  .stars b{color:var(--gold);letter-spacing:1px;font-weight:400}
+  .card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:10px}
+  .price{font-size:19px;font-weight:600;color:var(--ink)}
+  .price small{font-size:12px;font-weight:400;color:var(--muted);margin-left:6px}
+  .tab-wish{display:inline-flex;align-items:center;gap:6px}
+  .tab-wish svg{width:14px;height:14px}
+  .grid-empty{grid-column:1/-1;text-align:center;padding:50px 20px;border-radius:24px;background:#fff;color:var(--muted)}
+  .grid-empty svg{width:44px;height:44px;margin:0 auto 12px;color:var(--plum-2)}
+  .grid-empty p{margin-bottom:18px}
+  .pd-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .share{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;color:var(--plum);transition:border-color .2s}
+  .share:hover{border-color:var(--plum-2)}
+  .share svg{width:15px;height:15px}
+  .toast button[hidden]{display:none}
+  .add{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--plum);transition:background .2s,color .2s,border-color .2s}
+  .add:hover{background:var(--plum);color:#fff;border-color:var(--plum)}
+  .add svg{width:20px;height:20px}
+
+  /* quiz band */
+  .finder{margin-top:110px}
+  .finder-in{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto 1fr auto;align-items:center;gap:36px;padding:44px 56px;border-radius:30px;background:linear-gradient(100deg,#F9DCEA 0%,#EADFF7 55%,#D7E4F8 100%);isolation:isolate}
+  .finder-in h2{font-size:clamp(32px,3.6vw,46px)}
+  .finder-in .div{width:1px;height:70px;background:rgba(75,15,51,.2)}
+  .finder-in p{color:#4A3A52;max-width:340px}
+  .finder-in .blooms{position:absolute;width:130px;left:auto;right:-20px;top:-40px;bottom:auto;rotate:-24deg;z-index:0}
+  .finder-in > :not(.blooms){position:relative;z-index:1}
+
+  /* about */
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .about-art{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:5/4;background:linear-gradient(180deg,#A9C6EE,#E7D3EE 70%,#F7E6EF)}
+  .about-art .row{position:absolute;left:0;right:0;bottom:12%;display:flex;justify-content:center;align-items:flex-end;gap:2%;padding:0 6%}
+  .about-art .row svg{width:22%;filter:drop-shadow(0 18px 14px rgba(43,26,46,.18))}
+  .about-art .row svg:nth-child(2){width:28%}
+  .about-art .bank{bottom:-210px;height:320px}
+  .about p{color:#4A3A52;font-size:17px;margin-top:20px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .stat{padding:20px;border-radius:20px;background:#fff;box-shadow:0 8px 24px rgba(75,15,51,.05)}
+  .stat b{display:block;font-family:var(--serif);font-size:40px;font-weight:500;line-height:1;color:var(--plum)}
+  .stat span{font-size:13.5px;color:var(--muted)}
+
+  /* reviews */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .rev{padding:30px;border-radius:24px;background:#fff;box-shadow:0 8px 24px rgba(75,15,51,.05)}
+  .rev .stars b{font-size:16px}
+  .rev q{display:block;font-family:var(--serif);font-size:23px;line-height:1.3;color:var(--plum);margin:16px 0 20px;quotes:"“" "”"}
+  .rev .who{font-size:14px;color:var(--muted)}
+  .rev .who strong{color:var(--ink);font-weight:500}
+
+  /* footer */
+  footer{margin-top:120px;background:var(--plum);color:rgba(255,255,255,.78);border-radius:36px 36px 0 0;overflow:hidden;position:relative;isolation:isolate}
+  footer::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 80% at 90% 0%,rgba(196,154,216,.35),transparent 70%)}
+  .news{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:70px 0 56px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .news h2{color:#fff;font-size:clamp(32px,4vw,48px)}
+  .news h2 em{color:#F4CFE2}
+  .news form{display:flex;gap:10px;padding:6px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+  .news input{flex:1;min-width:0;background:none;border:0;padding:12px 18px;color:#fff;outline:none}
+  .news input::placeholder{color:rgba(255,255,255,.55)}
+  .news .msg{margin-top:12px;font-size:14px;color:#F4CFE2;min-height:21px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px;padding:56px 0}
+  .foot-grid .logo{align-items:flex-start;color:#fff}
+  .foot-grid p{font-size:14.5px;margin-top:16px;max-width:300px}
+  .foot-grid h4{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;font-weight:500;margin-bottom:16px}
+  .foot-grid ul{list-style:none;display:grid;gap:10px;font-size:14.5px}
+  .foot-grid a:hover{color:#fff}
+  .wa-btn{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:12px 20px;border-radius:999px;background:#fff;color:var(--plum);font-weight:500;font-size:14px;transition:transform .2s}
+  .wa-btn:hover{transform:translateY(-2px)}
+  .wa-btn svg{width:18px;height:18px}
+  .foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0 30px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:rgba(255,255,255,.6)}
+  .foot-bottom a{text-decoration:underline;text-underline-offset:3px}
+  /* rodapé em rosa e lilás */
+  footer{background:linear-gradient(160deg,#F7D8E8 0%,#E8DDF8 55%,#D8E5FA 100%);color:#5A4562;box-shadow:0 -10px 40px rgba(120,70,140,.08)}
+  footer::before{background:radial-gradient(50% 80% at 90% 0%,rgba(255,255,255,.6),transparent 70%)}
+  .news{border-bottom-color:rgba(75,15,51,.12)}
+  .news h2{color:var(--plum)}
+  .news h2 em{color:var(--plum-2)}
+  .news form{background:rgba(255,255,255,.65);border-color:rgba(255,255,255,.95)}
+  .news input{color:var(--ink)}
+  .news input::placeholder{color:#8E7E96}
+  .news .btn-white{background:var(--plum);color:#fff}
+  .news .msg{color:var(--plum-2)}
+  .foot-grid .logo,.foot-grid h4{color:var(--plum)}
+  .foot-grid a:hover{color:var(--plum)}
+  .wa-btn{background:var(--plum);color:#fff}
+  .foot-bottom{border-top-color:rgba(75,15,51,.12);color:#7A6880}
+
+  /* overlays */
+  .scrim{position:fixed;inset:0;z-index:80;background:rgba(43,26,46,.42);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+  .scrim.open{opacity:1;visibility:visible}
+  .drawer{position:fixed;top:0;right:0;bottom:0;z-index:90;width:min(440px,100%);background:var(--cloud);display:flex;flex-direction:column;transform:translateX(100%);transition:transform .4s cubic-bezier(.3,.8,.3,1);box-shadow:-20px 0 60px rgba(43,26,46,.15)}
+  .drawer.open{transform:none}
+  .dr-head{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;border-bottom:1px solid var(--line)}
+  .dr-head h2{font-size:30px}
+  .close{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--plum);background:#fff}
+  .close svg{width:18px;height:18px}
+  .ship-bar{padding:16px 24px;font-size:13.5px;color:var(--muted);border-bottom:1px solid var(--line)}
+  .ship-bar .track{height:6px;border-radius:9px;background:var(--line);margin-top:8px;overflow:hidden}
+  .ship-bar .fill{height:100%;border-radius:9px;background:linear-gradient(90deg,#C49AD8,var(--plum-2));transition:width .4s}
+  .dr-body{flex:1;overflow-y:auto;padding:8px 24px}
+  .line{display:grid;grid-template-columns:76px 1fr auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+  .line .thumb-b{width:76px;height:88px;border-radius:16px;display:grid;place-items:center}
+  .line .thumb-b svg{height:78px}
+  .line .thumb-b .set{width:70px;height:auto}
+  .line h3{font-size:21px}
+  .line .meta{font-size:13px;color:var(--muted)}
+  .qty{display:inline-flex;align-items:center;margin-top:8px;border:1px solid var(--line);border-radius:999px;background:#fff}
+  .qty button{width:32px;height:32px;display:grid;place-items:center;color:var(--plum);font-size:18px;line-height:1}
+  .qty span{min-width:22px;text-align:center;font-size:14px;font-weight:500}
+  .line .right{display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-weight:600}
+  .rm{font-size:12px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-weight:400}
+  .empty{text-align:center;padding:60px 10px;color:var(--muted)}
+  .empty svg{width:90px;margin:0 auto 18px;opacity:.9}
+  .empty p{margin-bottom:22px}
+  .dr-foot{padding:20px 24px 24px;border-top:1px solid var(--line);background:#fff}
+  .sum{display:flex;justify-content:space-between;font-size:14.5px;color:var(--muted);margin-bottom:6px}
+  .sum.total{font-size:18px;color:var(--ink);font-weight:600;margin:10px 0 16px}
+  .dr-foot .btn{width:100%}
+  .fine{font-size:12.5px;color:var(--muted);text-align:center;margin-top:12px}
+  .co label{display:block;font-size:13px;font-weight:500;color:var(--ink);margin:14px 0 6px}
+  .co input,.co textarea{width:100%;padding:12px 16px;border-radius:14px;border:1px solid var(--line);background:#fff;outline:none;transition:border-color .2s}
+  .co input:focus,.co textarea:focus{border-color:var(--plum-2)}
+  .co textarea{resize:vertical;min-height:70px}
+  .co .err{font-size:12.5px;color:#B3261E;margin-top:5px;min-height:0}
+  .seg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .seg button{padding:12px;border-radius:14px;border:1px solid var(--line);background:#fff;font-size:14px;text-align:left;line-height:1.3}
+  .seg button small{display:block;color:var(--muted);font-size:12px}
+  .seg button[aria-pressed="true"]{border-color:var(--plum);box-shadow:inset 0 0 0 1px var(--plum)}
+  .back{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--plum);margin-top:14px}
+  .back svg{width:16px;height:16px}
+  .done{text-align:center;padding:50px 6px}
+  .done .ok{width:72px;height:72px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:#EAF6EE;color:#2E7D4F}
+  .done .ok svg{width:34px;height:34px}
+  .done h3{font-size:32px;margin-bottom:10px}
+  .done p{color:var(--muted);margin-bottom:24px}
+
+  .modal{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:20px;visibility:hidden;pointer-events:none}
+  .modal.open{visibility:visible;pointer-events:auto}
+  .modal-box{position:relative;width:min(980px,100%);max-height:calc(100svh - 40px);overflow:auto;background:var(--cloud);border-radius:30px;box-shadow:0 40px 100px rgba(43,26,46,.3);opacity:0;transform:translateY(20px) scale(.98);transition:opacity .3s,transform .35s}
+  .modal.open .modal-box{opacity:1;transform:none}
+  .modal .close{position:absolute;top:16px;right:16px;z-index:3}
+  .pd{display:grid;grid-template-columns:1fr 1fr}
+  .pd-art{position:relative;min-height:520px;display:grid;place-items:center;overflow:hidden}
+  .pd-art .b{width:62%;max-width:300px;filter:drop-shadow(0 30px 26px rgba(43,26,46,.2));animation:float 6s ease-in-out infinite}
+  .pd-art .b.set{width:86%;max-width:none}
+  .pd-art .bank{bottom:-230px}
+  /* fundo do perfume: o .scn imita background-size:cover ancorado embaixo, e o frasco fica no pedestal */
+  .has-scene{container-type:size}
+  .pd-art.has-scene,.pd-art.has-scene[class]{display:block;padding:0}
+  .scn{position:absolute;left:50%;bottom:0;width:max(100cqw,74.667cqh);aspect-ratio:896/1200;translate:-50% 0;z-index:-1}
+  .pd-art .scn{z-index:0}
+  .scn .scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .scn .contact{position:absolute;left:var(--x);bottom:var(--y);width:27%;height:3%;translate:-50% 45%;border-radius:50%;background:radial-gradient(closest-side,rgba(55,28,55,.38),rgba(55,28,55,0))}
+  .scn .b,.pd-art .scn .b,.col .scn .b{position:absolute;left:var(--x);right:auto;top:auto;bottom:calc(var(--y) - .8%);width:44%;max-width:none;height:auto;translate:-50% 0;transform:none;animation:none;filter:drop-shadow(0 14px 14px rgba(43,26,46,.18));transition:translate .5s}
+  .col.has-scene .scn{width:max(118cqw,74.667cqh)}
+  .col.has-scene:hover .scn .b{transform:none;translate:-50% -8px}
+  /* cards da loja (quadrados): corta um pouco do chão para o frasco não encostar no topo */
+  .card-img.has-scene{display:block;isolation:isolate}
+  .card-img.has-scene .scn{bottom:-9cqw}
+  .card-img.has-scene .scn .b{width:42%;height:auto}
+  .card:hover .card-img.has-scene .scn .b{transform:none;translate:-50% -6px}
+  .card-img.has-scene .scene{transition:scale .6s}
+  .card:hover .card-img.has-scene .scene{scale:1.03}
+  .card-img.has-scene .tag{z-index:1}
+  .pd-info{padding:44px 40px 40px}
+  .pd-info .fam{text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:var(--plum-2)}
+  .pd-info h2{font-size:46px;margin:8px 0 8px}
+  .pd-info .lead{color:#4A3A52;margin:14px 0 20px}
+  .pyr{display:grid;gap:8px;margin-bottom:22px}
+  .pyr div{display:grid;grid-template-columns:70px 1fr;gap:12px;font-size:14.5px;padding:10px 14px;border-radius:14px;background:#fff}
+  .pyr span{color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding-top:2px}
+  .opt-label{font-size:13px;font-weight:500;margin-bottom:8px}
+  .sizes{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+  .sizes button{padding:10px 16px;border-radius:14px;border:1px solid var(--line);background:#fff;font-size:14px;line-height:1.25;text-align:left}
+  .sizes button small{display:block;color:var(--muted);font-size:12.5px}
+  .sizes button[aria-pressed="true"]{border-color:var(--plum);box-shadow:inset 0 0 0 1px var(--plum)}
+  .buy{display:flex;gap:12px;align-items:center}
+  .buy .qty{margin:0}
+  .buy .qty button{width:42px;height:48px}
+  .buy .btn{flex:1}
+
+  .quiz{padding:48px 44px 44px;text-align:center}
+  .quiz .eyebrow{justify-content:center}
+  .quiz .eyebrow::before{content:"";width:56px;height:1px;background:currentColor;opacity:.5}
+  .quiz h2{font-size:clamp(30px,4vw,42px);margin:14px 0 8px}
+  .quiz .step{color:var(--muted);font-size:14px;margin-bottom:26px}
+  .choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;max-width:760px;margin:0 auto}
+  .choice{padding:22px 18px;border-radius:22px;background:#fff;border:1px solid var(--line);text-align:left;transition:transform .2s,border-color .2s,box-shadow .2s}
+  .choice:hover{transform:translateY(-3px);border-color:var(--plum-2);box-shadow:var(--shadow)}
+  .choice b{display:block;font-family:var(--serif);font-weight:600;font-size:24px;color:var(--plum)}
+  .choice span{font-size:13.5px;color:var(--muted)}
+  .choice i{display:block;width:34px;height:34px;border-radius:50%;margin-bottom:12px}
+  .result{display:grid;grid-template-columns:200px 1fr;gap:30px;align-items:center;text-align:left;max-width:640px;margin:0 auto}
+  .result .art{border-radius:24px;aspect-ratio:3/4;display:grid;place-items:center}
+  .result .art svg{height:86%}
+  .result h3{font-size:38px}
+  .result p{color:#4A3A52;margin:8px 0 18px;font-size:15px}
+  .result .alts{font-size:14px;color:var(--muted);margin-top:16px}
+  .result .alts button{color:var(--plum);text-decoration:underline;text-underline-offset:3px}
+  .result .acts{display:flex;gap:10px;flex-wrap:wrap}
+
+  .b.photo{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover;transform:none!important;filter:none!important;animation:none!important;border-radius:inherit}
+  .card:hover .card-img .b.photo{transform:scale(1.04)!important;transition:transform .5s}
+  .card-img{overflow:hidden}
+  .line .thumb-b{position:relative;overflow:hidden}
+  .about-art{aspect-ratio:auto}
+  .about-art img{width:100%;height:auto;display:block}
+  .toast{position:fixed;left:50%;bottom:24px;z-index:100;transform:translate(-50%,140%);display:flex;align-items:center;gap:14px;padding:12px 14px 12px 20px;border-radius:999px;background:var(--plum);color:#fff;font-size:14px;box-shadow:0 18px 40px rgba(43,26,46,.3);transition:transform .4s cubic-bezier(.3,1.3,.5,1);width:max-content;max-width:calc(100% - 32px)}
+  .toast.show{transform:translate(-50%,0)}
+  .toast button{padding:8px 14px;border-radius:999px;background:#fff;color:var(--plum);font-size:13px;font-weight:500;white-space:nowrap}
+
+  /* flores espalhadas (img/flowers) */
+  .sec,footer{position:relative}
+  .sec{overflow-x:clip}
+  .sec > .wrap,footer > .wrap{position:relative;z-index:1}
+  .deco{position:absolute;z-index:0;width:var(--w);height:auto;pointer-events:none;filter:drop-shadow(0 12px 16px rgba(120,70,140,.16))}
+  .deco.flip{scale:-1 1}
+  .deco.sway{transform-origin:top center;animation:sway 7s ease-in-out infinite alternate}
+  @keyframes sway{from{rotate:-3deg}to{rotate:3deg}}
+  .petals{position:fixed;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+  .petal{position:absolute;top:0;left:var(--x);width:var(--s);height:auto;opacity:.9;animation:fall var(--d) linear var(--dl) infinite;filter:drop-shadow(0 4px 6px rgba(120,70,140,.18))}
+  @keyframes fall{from{transform:translate(0,-12vh) rotate(0)}50%{transform:translate(var(--dx),48vh) rotate(200deg)}to{transform:translate(0,112vh) rotate(400deg)}}
+  @media (prefers-reduced-motion:reduce){.petals{display:none}}
+  /* ===== cores do céu do topo espalhadas pelo site ===== */
+  body{background:linear-gradient(180deg,#E3ECFB 0%,#ECE4FA 14%,#F8DDEC 30%,#ECE2FA 46%,#DCE8FB 62%,#F6DFEC 78%,#E9E3FA 100%)}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+    radial-gradient(38% 32% at 6% 22%,rgba(143,184,236,.42),transparent 70%),
+    radial-gradient(34% 30% at 96% 64%,rgba(244,196,224,.5),transparent 70%),
+    radial-gradient(30% 26% at 88% 8%,rgba(252,226,190,.38),transparent 70%),
+    radial-gradient(36% 30% at 18% 92%,rgba(201,184,240,.45),transparent 70%)}
+  .page-sky{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+  .page-sky .cloud.fly{--o:.55}
+  .card,.rev,.stat,.grid-empty{background:rgba(255,255,255,.62);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border:1px solid rgba(255,255,255,.7)}
+  .card-body{background:rgba(255,255,255,.35)}
+  .tab{background:rgba(255,255,255,.6);border-color:rgba(255,255,255,.85)}
+  .sort select{background-color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.85)}
+  .features-in{background:rgba(255,255,255,.78)}
+  .finder-in{background:url("img/hero-sky.webp") center 40%/cover no-repeat;box-shadow:var(--shadow)}
+  .finder-in::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(255,255,255,.72) 0%,rgba(255,255,255,.35) 55%,rgba(255,255,255,.15) 100%)}
+  .finder-in .div{background:rgba(75,15,51,.3)}
+  .col{box-shadow:0 18px 50px rgba(90,60,150,.18)}
+  @media (max-width:1100px){
+    .nav-links{gap:22px}
+    .hero-in{padding:120px 32px 110px;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr) minmax(0,1.1fr)}
+    .notes{width:180px}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .cols{grid-template-columns:repeat(2,1fr)}
+    .features-in{border-radius:30px;grid-template-columns:repeat(3,1fr);row-gap:16px}
+    .feat:nth-child(4){border-left:0}
+    .finder-in{grid-template-columns:1fr auto;padding:40px}
+    .finder-in .div{display:none}
+    .finder-in p{grid-column:1}
+    .finder-in .btn{grid-row:1/3;grid-column:2}
+  }
+  @media (max-width:900px){
+    .nav-links,.nav-cta,.nav-right .lang{display:none}
+    .burger{display:grid}
+    .nav-in{padding:12px 16px}
+    .nav.scrolled .nav-in{padding:10px 16px}
+    .hero{margin:8px;border-radius:28px;background-position:16% 60%}
+    .hero-in{grid-template-columns:1fr;padding:108px 20px 96px;min-height:0;gap:18px}
+    .hero-word{top:150px;font-size:27vw}
+    .hero-kicker{position:relative;left:auto;top:auto;text-align:center;font-size:22px;order:0}
+    .hero-kicker small{font-size:10.5px}
+    .h-mid{order:1}
+    .stage{width:min(300px,72vw)}
+    .orbit{top:30%;height:28%}
+    .h-left{order:2;margin:0;justify-self:stretch}
+    .notes{width:100%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;text-align:left;padding:20px 22px}
+    .notes ul{font-size:14px;line-height:1.6}
+    .notes .arrow{display:none}
+    .notes .sp{text-align:right}
+    .notes .size{font-size:20px}
+    .notes .price{font-size:38px}
+    .h-right{order:3;margin:0}
+    .desc{padding:22px}
+    .desc h1{font-size:24px}
+    .blooms{width:150px}
+    .blooms.r{display:none}
+    .deco{width:calc(var(--w) * .55)}
+    .finder-in .blooms{width:96px;top:-30px}
+    .petal:nth-child(n+5){display:none}
+    .sec{padding-top:80px}
+    .sec-head{flex-direction:column;align-items:flex-start}
+    .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+    .card-body{padding:14px 14px 16px}
+    .card-body h3{font-size:20px}
+    .price{font-size:16px}
+    .add{width:40px;height:40px}
+    .add svg{width:18px;height:18px}
+    .heart{width:34px;height:34px;right:8px;top:8px}
+    .tag{left:10px;top:10px;font-size:10px;padding:4px 9px}
+    .cols{gap:12px}
+    .col{height:260px}
+    .col-foot{padding:12px 12px 12px 14px;left:8px;right:8px;bottom:8px}
+    .col-foot h3{font-size:22px}
+    .col-foot p{display:none}
+    .col-foot .go{width:34px;height:34px}
+    .sig{margin-top:80px}
+    .sig-in{grid-template-columns:1fr;padding-top:60px;gap:0;min-height:0}
+    .sig-art{height:340px}
+    .sig-art .b{width:220px}
+    .sig-art .ring{width:300px;height:300px}
+    .sig-art .ring.two{width:230px;height:230px}
+    .sig{margin:80px 8px 0;border-radius:28px;background-size:auto 400px;background-position:74% bottom;background-color:#F6DDEA}
+    .sig::before{background:linear-gradient(180deg,#F6DDEA 0%,#F6DDEA 50%,rgba(246,221,234,0) 64%)}
+    .sig-art{height:360px}
+    .finder{margin-top:80px}
+    .finder-in{grid-template-columns:1fr;padding:34px 24px;gap:16px;text-align:left}
+    .finder-in .btn{grid-row:auto;grid-column:auto;justify-self:start}
+    .about{grid-template-columns:1fr;gap:34px}
+    .stats{gap:10px}
+    .stat{padding:16px 12px}
+    .stat b{font-size:32px}
+    .reviews{grid-template-columns:1fr}
+    .news{grid-template-columns:1fr;padding-top:54px}
+    .foot-grid{grid-template-columns:1fr 1fr}
+    .foot-grid > div:first-child{grid-column:1/-1}
+    footer{margin-top:90px;border-radius:28px 28px 0 0}
+    .modal{padding:0;place-items:end center}
+    .modal-box{border-radius:28px 28px 0 0;max-height:94svh}
+    .pd{grid-template-columns:1fr}
+    .pd-art{min-height:300px}
+    .pd-art.has-scene{min-height:420px}
+    .pd-art .b{width:auto;height:260px}
+    .pd-art .b.set{width:80%;height:auto}
+    .pd-info{padding:26px 22px 30px}
+    .pd-info h2{font-size:38px}
+    .quiz{padding:40px 20px 30px}
+    .choices{grid-template-columns:1fr 1fr}
+    .choice{padding:16px 14px}
+    .choice b{font-size:21px}
+    .result{grid-template-columns:1fr;gap:20px;text-align:center}
+    .result .art{width:170px;margin:0 auto}
+    .result .acts{justify-content:center}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 16px}
+    .features{margin-top:-46px;padding:0 16px}
+    .features-in{grid-template-columns:1fr 1fr;padding:18px 14px;border-radius:24px;row-gap:14px}
+    .feat{justify-content:flex-start;border-left:0;font-size:13px;gap:10px;padding:2px 4px}
+    .feat svg{width:24px;height:24px}
+    .feat:last-child{grid-column:1/-1;justify-content:center}
+    .tools{flex-direction:column;align-items:stretch}
+    .tabs{gap:6px}
+    .tab{padding:9px 14px;font-size:13px}
+    .sort{justify-content:space-between}
+    .h-cta{padding:16px 22px}
+    .h-cta .long{width:40px}
+    .thumb svg{height:70px}
+    .thumb span{font-size:11.5px}
+    .round-arrow{display:none}
+    .foot-grid{grid-template-columns:1fr}
+    .news form{flex-direction:column;border-radius:22px}
+    .news form .btn{width:100%}
+    .rev{padding:24px}
+    .rev q{font-size:21px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<div class="petals" aria-hidden="true">
+  <img class="petal" src="img/flowers/petal1.webp?v=2" alt="" style="--x:8vw;--s:22px;--d:19s;--dl:-3s;--dx:80px">
+  <img class="petal" src="img/flowers/petal2.webp?v=2" alt="" style="--x:24vw;--s:18px;--d:23s;--dl:-12s;--dx:-60px">
+  <img class="petal" src="img/flowers/petal4.webp?v=2" alt="" style="--x:41vw;--s:26px;--d:21s;--dl:-7s;--dx:90px">
+  <img class="petal" src="img/flowers/petal3.webp?v=2" alt="" style="--x:58vw;--s:30px;--d:26s;--dl:-18s;--dx:-70px">
+  <img class="petal" src="img/flowers/petal5.webp?v=2" alt="" style="--x:73vw;--s:20px;--d:18s;--dl:-1s;--dx:60px">
+  <img class="petal" src="img/flowers/petal6.webp?v=2" alt="" style="--x:87vw;--s:24px;--d:24s;--dl:-15s;--dx:-90px">
+  <img class="petal" src="img/flowers/petal4.webp?v=2" alt="" style="--x:95vw;--s:18px;--d:20s;--dl:-9s;--dx:50px">
+</div>
+<div class="page-sky" aria-hidden="true">
+  <div class="cloud fly" style="--w:420px;--y:12%;--d:90s;--dl:-20s"><i></i></div>
+  <div class="cloud fly" style="--w:300px;--y:46%;--d:75s;--dl:-55s"><i></i></div>
+  <div class="cloud fly" style="--w:520px;--y:74%;--d:110s;--dl:-80s;--o:.45"><i></i></div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="Verde Perfumery"><b>VERDE</b><small>PERFUMERY</small></a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#shop" data-i18n="nav.new">New in</a>
+      <a href="#collections" data-i18n="nav.frag">Fragrances</a>
+      <a href="#shop" data-filter="sets" data-i18n="nav.gifts">Gift sets</a>
+      <a href="#finder" data-i18n="nav.finder">Scent finder</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <button class="icon-btn" type="button" id="cartBtn" data-i18n-aria="aria.bag" aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+      <a class="btn btn-white nav-cta" href="#contact" data-i18n="nav.contact">Contact us</a>
+      <button class="icon-btn burger" type="button" id="burger" data-i18n-aria="aria.menu" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav-panel">
+    <div class="mnav-top">
+      <span class="logo"><b>VERDE</b><small>PERFUMERY</small></span>
+      <button class="close" type="button" id="mnavClose" data-i18n-aria="aria.close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <a class="ml" href="#shop" data-i18n="nav.new">New in</a>
+    <a class="ml" href="#collections" data-i18n="nav.frag">Fragrances</a>
+    <a class="ml" href="#shop" data-filter="sets" data-i18n="nav.gifts">Gift sets</a>
+    <a class="ml" href="#finder" data-i18n="nav.finder">Scent finder</a>
+    <a class="ml" href="#about" data-i18n="nav.about">About</a>
+    <a class="ml" href="#contact" data-i18n="nav.contact">Contact us</a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" id="hero" aria-roledescription="carousel" data-i18n-aria="aria.hero" aria-label="Featured fragrances">
+  <div class="sky" aria-hidden="true">
+    <div class="cloud fly" style="--w:380px;--y:9%;--d:46s;--dl:-8s;--o:.7"><i></i></div>
+    <div class="cloud fly" style="--w:240px;--y:22%;--d:34s;--dl:-22s;--o:.6"><i></i></div>
+    <div class="cloud fly" style="--w:520px;--y:36%;--d:58s;--dl:-40s;--o:.55"><i></i></div>
+    <div class="cloud fly" style="--w:300px;--y:55%;--d:40s;--dl:-14s;--o:.7"><i></i></div>
+    <div class="cloud fly" style="--w:460px;--y:70%;--d:52s;--dl:-30s;--o:.8"><i></i></div>
+    <div class="cloud fly" style="--w:200px;--y:4%;--d:30s;--dl:-3s;--o:.55"><i></i></div>
+    <span class="spark" style="left:22%;top:26%"></span>
+    <span class="spark" style="left:71%;top:20%;animation-delay:1.2s"></span>
+    <span class="spark" style="left:84%;top:48%;animation-delay:2.1s"></span>
+    <span class="spark" style="left:9%;top:54%;animation-delay:.6s"></span>
+  </div>
+
+  <div class="hero-in">
+    <div class="hero-word" id="heroWord" aria-hidden="true">NUAGE</div>
+    <p class="hero-kicker"><span data-i18n="hero.kicker">Feel the</span><small id="heroNo">No. 01 · Eau de Parfum</small></p>
+    <svg class="orbit" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="500" cy="150" rx="492" ry="140" transform="rotate(-4 500 150)"/></svg>
+
+    <div class="h-left hero-text-fade">
+      <div class="glass notes">
+        <ul id="heroNotes"></ul>
+        <svg class="arrow" viewBox="0 0 12 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 0v38M1 33l5 6 5-6"/></svg>
+        <div class="sp">
+          <div class="size" id="heroSize">50 ml</div>
+          <svg class="arrow" viewBox="0 0 12 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 0v38M1 33l5 6 5-6"/></svg>
+          <div class="price" id="heroPrice">$145</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-mid">
+      <div class="stage" id="stage"><div class="bottle" id="heroBottle"></div><div class="puff"></div></div>
+    </div>
+
+    <div class="h-right">
+      <div class="glass desc hero-text-fade">
+        <h1 id="heroName">Nuage Rose Eau de Parfum</h1>
+        <p id="heroDesc"></p>
+      </div>
+      <button class="btn btn-plum h-cta" type="button" id="heroAdd"><span data-i18n="hero.cta">Add to bag</span><svg class="long" viewBox="0 0 64 12" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M0 6h62M56 1l6 5-6 5"/></svg></button>
+      <div class="thumbs">
+        <button class="round-arrow" type="button" id="heroPrev" data-i18n-aria="aria.prev" aria-label="Previous fragrance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 4 6 12l10 8z"/></svg></button>
+        <div class="thumbs-row" id="heroThumbs"></div>
+        <button class="round-arrow" type="button" id="heroNext" data-i18n-aria="aria.next" aria-label="Next fragrance"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m8 4 10 8-10 8z"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <img class="blooms" src="img/flowers/blossoms.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="">
+  <img class="blooms r" src="img/flowers/sprig.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="">
+</section>
+
+<!-- FEATURES -->
+<div class="features">
+  <div class="features-in">
+    <div class="feat"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M9 5h14l5 7-12 15L4 12z"/><path d="M4 12h24M12 5l4 22M20 5l-4 22M9 5l3 7M23 5l-3 7"/></svg><span data-i18n-html="feat.1">Premium<br>fragrances</span></div>
+    <div class="feat"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 26C6 13 14 6 27 5c0 13-7 21-19 21"/><path d="M6 26 18 14"/></svg><span data-i18n-html="feat.2">Long-lasting<br>scents</span></div>
+    <div class="feat"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 4h8M13 4v9L5 25a2 2 0 0 0 1.7 3h18.6a2 2 0 0 0 1.7-3l-8-12V4"/><path d="M8 20h16"/></svg><span data-i18n-html="feat.3">IFRA<br>compliant</span></div>
+    <div class="feat"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="4" y="11" width="24" height="6" rx="1"/><path d="M6 17v11h20V17M16 11v17M16 11c-2-5-8-6-8-2s8 2 8 2 8 2 8-2-6-3-8 2"/></svg><span data-i18n-html="feat.4">Gift-ready<br>packaging</span></div>
+    <div class="feat"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M3 8h16v14H3zM19 13h5l5 5v4h-10"/><circle cx="8" cy="24" r="2.5"/><circle cx="24" cy="24" r="2.5"/></svg><span data-i18n-html="feat.5">Free shipping<br>over $100</span></div>
+  </div>
+</div>
+
+<!-- COLLECTIONS -->
+<section class="sec" id="collections">
+  <img class="deco sway flip" src="img/flowers/branch.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="--w:300px;right:-24px;top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow" data-i18n="col.eyebrow">Explore the collections</p><h2 data-i18n-html="col.title">A scent for <em>every</em> mood</h2></div>
+      <a class="link" href="#shop" data-i18n-html="col.all">View all fragrances</a>
+    </div>
+    <div class="cols" id="cols"></div>
+  </div>
+</section>
+
+<!-- SIGNATURE -->
+<section class="sig" id="signature">
+  <div class="sky" aria-hidden="true">
+    <div class="cloud" style="--w:480px;right:-60px;top:40px;--d:80s;--dx:-80px"><i></i></div>
+    <div class="cloud" style="--w:380px;right:22%;bottom:-40px;--d:70s;--dx:60px"><i></i></div>
+  </div>
+  <div class="wrap sig-in">
+    <div>
+      <p class="eyebrow" data-i18n="sig.eyebrow">The signature series</p>
+      <h2 data-i18n-html="sig.title">Oud Prune,<br><em>our deepest pour</em></h2>
+      <p data-i18n="sig.text">Velvet plum, Damask rose and a thread of oud, aged for eight weeks before bottling. Rich, slow and made for evenings.</p>
+      <button class="btn btn-white" type="button" data-open="prune"><span data-i18n="sig.cta">Explore the scent</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M14 6l6 6-6 6"/></svg></button>
+    </div>
+    <div class="sig-art" aria-hidden="true">
+      <div class="ring"></div><div class="ring two"></div>
+      <div class="b" id="sigBottle"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="sec" id="shop">
+  <img class="deco sway flip" src="img/flowers/wisteria.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="--w:200px;right:-36px;top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow" data-i18n="shop.eyebrow">Shop</p><h2 data-i18n-html="shop.title">Our <em>bestsellers</em></h2></div>
+    </div>
+    <div class="tools">
+      <div class="tabs" id="tabs" role="group" data-i18n-aria="aria.filter" aria-label="Filter by collection"></div>
+      <label class="sort"><span data-i18n="shop.sort">Sort by</span>
+        <select id="sort">
+          <option value="feat" data-i18n="sort.feat">Featured</option>
+          <option value="low" data-i18n="sort.low">Price: low to high</option>
+          <option value="high" data-i18n="sort.high">Price: high to low</option>
+          <option value="rate" data-i18n="sort.rate">Top rated</option>
+        </select>
+      </label>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- FINDER -->
+<section class="finder" id="finder">
+  <div class="wrap">
+    <div class="finder-in">
+      <img class="blooms" src="img/flowers/ranunculus.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="">
+      <h2 data-i18n-html="finder.title">Find your<br><em>signature scent</em></h2>
+      <span class="div"></span>
+      <p data-i18n="finder.text">Answer two quick questions and we'll match you with the fragrance that fits you best.</p>
+      <button class="btn btn-plum" type="button" id="quizBtn"><span data-i18n="finder.cta">Find my scent</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M14 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <img class="deco" src="img/flowers/magnolia.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="--w:170px;left:calc(50% - 640px);top:40px;rotate:-14deg">
+  <div class="wrap about">
+    <div class="about-art"><img src="img/about.webp" alt="Two Verde eau de parfum bottles, green and gold, on a marble counter in soft morning light" data-i18n-alt="about.alt" loading="lazy" decoding="async" width="1000" height="1070"></div>
+    <div>
+      <p class="eyebrow" data-i18n="about.eyebrow">Our story</p>
+      <h2 data-i18n-html="about.title" style="margin-top:14px">Small batches,<br><em>soft as air</em></h2>
+      <p data-i18n="about.p1">Verde started in a tiny Miami studio with one idea: perfume should feel like weather, light enough to live in and memorable enough to be missed. Every scent is blended in small batches with oils sourced from Grasse, then rested for weeks before bottling.</p>
+      <p data-i18n="about.p2">No harsh alcohol bite, no overpowering trails. Just clean, long-lasting eaux de parfum that sit close to the skin and open up through the day.</p>
+      <div class="stats">
+        <div class="stat"><b>10</b><span data-i18n="about.s1">signature scents</span></div>
+        <div class="stat"><b>8h+</b><span data-i18n="about.s2">on the skin</span></div>
+        <div class="stat"><b>4.9</b><span data-i18n="about.s3">average rating</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews">
+  <img class="deco" src="img/flowers/peony.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="--w:190px;right:-40px;top:50px;rotate:12deg">
+  <img class="deco" src="img/flowers/rose.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="--w:130px;left:-30px;bottom:-60px;rotate:-20deg">
+  <div class="wrap">
+    <div class="sec-head"><div><p class="eyebrow" data-i18n="rev.eyebrow">Reviews</p><h2 data-i18n-html="rev.title">Loved <em>close up</em></h2></div></div>
+    <div class="reviews">
+      <figure class="rev"><div class="stars"><b>★★★★★</b></div><q data-i18n="rev.1">I get asked what I'm wearing every single time. Nuage Rose is soft but it lasts until bedtime.</q><figcaption class="who"><strong>Camila R.</strong> · Coral Gables, FL</figcaption></figure>
+      <figure class="rev"><div class="stars"><b>★★★★★</b></div><q data-i18n="rev.2">Bois Fumé is the first cologne my partner and I both steal from each other. Smoky, never loud.</q><figcaption class="who"><strong>Daniel M.</strong> · Brooklyn, NY</figcaption></figure>
+      <figure class="rev"><div class="stars"><b>★★★★★</b></div><q data-i18n="rev.3">Ordered the Discovery Set, then the full bottle of Bleu Lumière. The packaging alone feels like a gift.</q><figcaption class="who"><strong>Priya S.</strong> · Austin, TX</figcaption></figure>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <img class="deco" src="img/flowers/blossoms.webp?v=2" alt="" aria-hidden="true" loading="lazy" decoding="async" style="--w:230px;right:-30px;top:-20px;rotate:-8deg;z-index:0">
+  <div class="wrap">
+    <div class="news">
+      <div><h2 data-i18n-html="news.title">10% off your <em>first bottle</em></h2></div>
+      <div>
+        <form id="newsForm" novalidate>
+          <label class="sr" for="newsMail" style="position:absolute;left:-9999px" data-i18n="news.label">Email address</label>
+          <input id="newsMail" type="email" autocomplete="email" data-i18n-ph="news.ph" placeholder="Your email address">
+          <button class="btn btn-white" type="submit" data-i18n="news.cta">Subscribe</button>
+        </form>
+        <p class="msg" id="newsMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <span class="logo"><b>VERDE</b><small>PERFUMERY</small></span>
+        <p data-i18n="foot.about">Soft, long-lasting eaux de parfum, blended in small batches and shipped across the US from Miami.</p>
+        <a class="wa-btn" id="waContact" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg><span data-i18n="foot.wa">Chat on WhatsApp</span></a>
+      </div>
+      <div>
+        <h4 data-i18n="foot.shop">Shop</h4>
+        <ul>
+          <li><a href="#shop" data-filter="her" data-i18n="cat.her">For her</a></li>
+          <li><a href="#shop" data-filter="him" data-i18n="cat.him">For him</a></li>
+          <li><a href="#shop" data-filter="unisex" data-i18n="cat.unisex">Unisex</a></li>
+          <li><a href="#shop" data-filter="sets" data-i18n="cat.sets">Gift sets</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot.help">Help</h4>
+        <ul>
+          <li data-i18n="foot.h1">Free US shipping over $100</li>
+          <li data-i18n="foot.h2">Delivery in 2–5 business days</li>
+          <li data-i18n="foot.h3">30-day returns on unopened bottles</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot.visit">Visit the studio</h4>
+        <ul>
+          <li>Miami Design District, FL</li>
+          <li data-i18n="foot.hours1">Tue–Sat · 11 am – 7 pm</li>
+          <li data-i18n="foot.hours2">Sun · 12 pm – 5 pm</li>
+          <li><a href="mailto:hello@verdeperfumery.example">hello@verdeperfumery.example</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Verde Perfumery. <span data-i18n="foot.concept">Concept store: the brand, products and reviews are fictional.</span></span>
+      <span data-i18n-html="foot.kynex">Website by <a href="https://kynex.kynex-sites.workers.dev" target="_blank" rel="noopener">KYNEX</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drTitle" aria-hidden="true">
+  <div class="dr-head">
+    <h2 id="drTitle" data-i18n="cart.title">Your bag</h2>
+    <button class="close" type="button" id="drClose" data-i18n-aria="aria.close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="ship-bar" id="shipBar"></div>
+  <div class="dr-body" id="drBody"></div>
+  <div class="dr-foot" id="drFoot"></div>
+</aside>
+
+<!-- PRODUCT / QUIZ MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-box" id="modalBox">
+    <button class="close" type="button" id="modalClose" data-i18n-aria="aria.close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText"></span><button type="button" id="toastBtn" data-i18n="toast.view">View bag</button></div>
+
+<script>
+/* =========================================================
+   Verde Perfumery — concept store by KYNEX
+   ========================================================= */
+const WA = "13682991794";               // WhatsApp que recebe os pedidos
+const FREE_SHIP = 100, SHIP_FEE = 8;
+
+/* ---------- textos (EN / PT) ---------- */
+const I18N = {
+  en: {
+    "nav.new":"New in","nav.frag":"Fragrances","nav.gifts":"Gift sets","nav.finder":"Scent finder","nav.about":"About","nav.contact":"Contact us",
+    "aria.bag":"Shopping bag","aria.menu":"Open menu","aria.close":"Close","aria.prev":"Previous fragrance","aria.next":"Next fragrance","aria.hero":"Featured fragrances","aria.filter":"Filter by collection","aria.wish":"Save to wishlist","aria.add":"Add to bag",
+    "hero.kicker":"Feel the","hero.cta":"Add to bag","hero.no":"Eau de Parfum",
+    "feat.1":"Premium<br>fragrances","feat.2":"Long-lasting<br>scents","feat.3":"IFRA<br>compliant","feat.4":"Gift-ready<br>packaging","feat.5":"Free shipping<br>over $100",
+    "col.eyebrow":"Explore the collections","col.title":"A scent for <em>every</em> mood","col.all":"View all fragrances <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6'><path d='M4 12h15M14 6l6 6-6 6'/></svg>",
+    "cat.all":"All","cat.her":"For her","cat.him":"For him","cat.unisex":"Unisex","cat.sets":"Gift sets",
+    "cat.her.t":"Soft · Floral · Timeless","cat.him.t":"Woody · Warm · Refined","cat.unisex.t":"Fresh · Airy · Easy","cat.sets.t":"Try them all, gift them well",
+    "sig.eyebrow":"The signature series","sig.title":"Oud Prune,<br><em>our deepest pour</em>","sig.text":"Velvet plum, Damask rose and a thread of oud, aged for eight weeks before bottling. Rich, slow and made for evenings.","sig.cta":"Explore the scent",
+    "shop.eyebrow":"Shop","shop.title":"Our <em>bestsellers</em>","shop.sort":"Sort by","sort.feat":"Featured","sort.low":"Price: low to high","sort.high":"Price: high to low","sort.rate":"Top rated",
+    "shop.from":"from","tag.best":"Bestseller","tag.new":"New","tag.sig":"Signature","tag.gift":"Gift",
+    "fam.floral":"Floral","fam.fresh":"Fresh","fam.warm":"Warm & amber","fam.woody":"Woody","fam.set":"Gift set",
+    "finder.title":"Find your<br><em>signature scent</em>","finder.text":"Answer two quick questions and we'll match you with the fragrance that fits you best.","finder.cta":"Find my scent",
+    "about.eyebrow":"Our story","about.title":"Small batches,<br><em>soft as air</em>",
+    "about.p1":"Verde started in a tiny Miami studio with one idea: perfume should feel like weather, light enough to live in and memorable enough to be missed. Every scent is blended in small batches with oils sourced from Grasse, then rested for weeks before bottling.",
+    "about.p2":"No harsh alcohol bite, no overpowering trails. Just clean, long-lasting eaux de parfum that sit close to the skin and open up through the day.",
+    "about.alt":"Two Verde eau de parfum bottles, green and gold, on a marble counter in soft morning light","about.s1":"signature scents","about.s2":"on the skin","about.s3":"average rating",
+    "rev.eyebrow":"Reviews","rev.title":"Loved <em>close up</em>",
+    "rev.1":"I get asked what I'm wearing every single time. Nuage Rose is soft but it lasts until bedtime.",
+    "rev.2":"Bois Fumé is the first cologne my partner and I both steal from each other. Smoky, never loud.",
+    "rev.3":"Ordered the Discovery Set, then the full bottle of Bleu Lumière. The packaging alone feels like a gift.",
+    "news.title":"10% off your <em>first bottle</em>","news.label":"Email address","news.ph":"Your email address","news.cta":"Subscribe","news.ok":"You're in! Check your inbox for your 10% code.","news.bad":"Please enter a valid email address.",
+    "foot.about":"Soft, long-lasting eaux de parfum, blended in small batches and shipped across the US from Miami.","foot.wa":"Chat on WhatsApp","foot.shop":"Shop","foot.help":"Help",
+    "foot.h1":"Free US shipping over $100","foot.h2":"Delivery in 2–5 business days","foot.h3":"30-day returns on unopened bottles",
+    "foot.visit":"Visit the studio","foot.hours1":"Tue–Sat · 11 am – 7 pm","foot.hours2":"Sun · 12 pm – 5 pm",
+    "foot.concept":"Concept store: the brand, products and reviews are fictional.","foot.kynex":"Website by <a href='https://kynex.kynex-sites.workers.dev' target='_blank' rel='noopener'>KYNEX</a>",
+    "wa.hello":"Hi Verde Perfumery! I have a question about your fragrances.",
+    "cart.title":"Your bag","cart.empty":"Your bag is empty.","cart.shop":"Explore fragrances","cart.sub":"Subtotal","cart.ship":"Shipping","cart.free":"Free","cart.total":"Total","cart.checkout":"Checkout","cart.remove":"Remove",
+    "cart.away":"You're {x} away from free shipping","cart.unlocked":"You've unlocked free shipping!","cart.note":"Taxes calculated at checkout.",
+    "co.title":"Almost there","co.name":"Full name","co.how":"Delivery","co.ship":"Ship to me","co.ship.s":"2–5 business days","co.pick":"Pick up in Miami","co.pick.s":"Ready same day, free",
+    "co.addr":"Shipping address","co.addr.ph":"Street, city, state and ZIP","co.note":"Gift note (optional)","co.note.ph":"We'll handwrite it on a card",
+    "co.send":"Send order on WhatsApp","co.fine":"Your order opens in WhatsApp so we can confirm stock and payment with you.","co.back":"Back to bag",
+    "co.err.name":"Please enter your name.","co.err.addr":"Please enter your shipping address.",
+    "done.title":"Order sent!","done.text":"We've opened WhatsApp with your order. Send the message and we'll reply to confirm payment and delivery.","done.cta":"Continue shopping",
+    "wa.order":"Hi Verde Perfumery! I'd like to place an order:","wa.name":"Name","wa.delivery":"Delivery","wa.pick":"Pick up in Miami","wa.ship":"Ship to","wa.note":"Gift note",
+    "pd.notes":"Notes","pd.top":"Top","pd.heart":"Heart","pd.base":"Base","pd.size":"Size","pd.add":"Add to bag","pd.reviews":"reviews",
+    "toast.added":"added to your bag","toast.view":"View bag",
+    "cat.wish":"Favorites","shop.nowish":"No favorites yet. Tap the heart on any fragrance to save it here.","shop.seeall":"See all fragrances",
+    "wish.added":"saved to favorites","wish.removed":"removed from favorites",
+    "pd.share":"Share","pd.copied":"Link copied. Paste it anywhere to share.","pd.copy":"Copy this link:",
+    "quiz.eyebrow":"Scent finder","quiz.q1":"When will you wear it most?","quiz.q2":"Which of these draws you in?","quiz.step":"Question {n} of 2",
+    "q.day":"By day","q.day.s":"Office, brunch, errands","q.night":"After dark","q.night.s":"Dinners, dates, nights out","q.always":"Every day","q.always.s":"One scent for everything",
+    "q.fresh":"Fresh","q.fresh.s":"Clean, airy, citrus, sea","q.floral":"Floral","q.floral.s":"Soft, romantic, petals","q.warm":"Warm","q.warm.s":"Golden, sweet, amber","q.woody":"Woody","q.woody.s":"Deep, smoky, cedar",
+    "quiz.match":"Your match","quiz.also":"You might also love:","quiz.view":"View details","quiz.again":"Start over"
+  },
+  pt: {
+    "nav.new":"Novidades","nav.frag":"Fragrâncias","nav.gifts":"Kits presente","nav.finder":"Descubra seu perfume","nav.about":"Sobre","nav.contact":"Contato",
+    "aria.bag":"Sacola de compras","aria.menu":"Abrir menu","aria.close":"Fechar","aria.prev":"Fragrância anterior","aria.next":"Próxima fragrância","aria.hero":"Fragrâncias em destaque","aria.filter":"Filtrar por coleção","aria.wish":"Salvar nos favoritos","aria.add":"Adicionar à sacola",
+    "hero.kicker":"Sinta o","hero.cta":"Adicionar à sacola","hero.no":"Eau de Parfum",
+    "feat.1":"Fragrâncias<br>premium","feat.2":"Fixação<br>prolongada","feat.3":"Padrão<br>IFRA","feat.4":"Embalagem<br>para presente","feat.5":"Frete grátis<br>acima de $100",
+    "col.eyebrow":"Conheça as coleções","col.title":"Um perfume para <em>cada</em> momento","col.all":"Ver todas as fragrâncias <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6'><path d='M4 12h15M14 6l6 6-6 6'/></svg>",
+    "cat.all":"Todos","cat.her":"Femininos","cat.him":"Masculinos","cat.unisex":"Unissex","cat.sets":"Kits presente",
+    "cat.her.t":"Suaves · Florais · Atemporais","cat.him.t":"Amadeirados · Quentes · Elegantes","cat.unisex.t":"Frescos · Leves · Fáceis de usar","cat.sets.t":"Prove todos, presenteie bem",
+    "sig.eyebrow":"A série assinatura","sig.title":"Oud Prune,<br><em>o mais intenso</em>","sig.text":"Ameixa aveludada, rosa damascena e um toque de oud, maturado por oito semanas antes do envase. Encorpado, envolvente e feito para a noite.","sig.cta":"Conhecer o perfume",
+    "shop.eyebrow":"Loja","shop.title":"Os <em>mais vendidos</em>","shop.sort":"Ordenar","sort.feat":"Destaques","sort.low":"Menor preço","sort.high":"Maior preço","sort.rate":"Mais bem avaliados",
+    "shop.from":"a partir de","tag.best":"Mais vendido","tag.new":"Novo","tag.sig":"Assinatura","tag.gift":"Presente",
+    "fam.floral":"Floral","fam.fresh":"Fresco","fam.warm":"Quente e ambarado","fam.woody":"Amadeirado","fam.set":"Kit presente",
+    "finder.title":"Descubra o seu<br><em>perfume assinatura</em>","finder.text":"Responda duas perguntas rápidas e a gente indica a fragrância que mais combina com você.","finder.cta":"Descobrir meu perfume",
+    "about.eyebrow":"Nossa história","about.title":"Pequenos lotes,<br><em>leves como o ar</em>",
+    "about.p1":"A Verde nasceu num pequeno estúdio em Miami com uma ideia: perfume deve ser como o clima, leve o bastante para se viver nele e marcante o bastante para deixar saudade. Cada fragrância é feita em pequenos lotes, com óleos de Grasse, e descansa por semanas antes de ser envasada.",
+    "about.p2":"Sem aquele ardor de álcool, sem rastro exagerado. Só eaux de parfum limpos e duradouros, que ficam perto da pele e se abrem ao longo do dia.",
+    "about.alt":"Dois frascos de eau de parfum Verde, verde e dourado, sobre uma bancada de mármore com luz suave da manhã","about.s1":"fragrâncias exclusivas","about.s2":"de fixação","about.s3":"nota média",
+    "rev.eyebrow":"Avaliações","rev.title":"Amados <em>de perto</em>",
+    "rev.1":"Toda vez alguém me pergunta qual perfume estou usando. O Nuage Rose é suave, mas dura até a hora de dormir.",
+    "rev.2":"O Bois Fumé é o primeiro perfume que eu e meu parceiro vivemos pegando um do outro. Esfumaçado, mas nunca exagerado.",
+    "rev.3":"Pedi o Discovery Set e depois o frasco inteiro do Bleu Lumière. Só a embalagem já parece um presente.",
+    "news.title":"10% off no seu <em>primeiro frasco</em>","news.label":"E-mail","news.ph":"Seu e-mail","news.cta":"Assinar","news.ok":"Pronto! Confira seu e-mail para pegar o cupom de 10%.","news.bad":"Digite um e-mail válido.",
+    "foot.about":"Eaux de parfum suaves e duradouros, feitos em pequenos lotes e enviados de Miami para todo os EUA.","foot.wa":"Falar no WhatsApp","foot.shop":"Loja","foot.help":"Ajuda",
+    "foot.h1":"Frete grátis nos EUA acima de $100","foot.h2":"Entrega em 2 a 5 dias úteis","foot.h3":"Troca em até 30 dias (frasco lacrado)",
+    "foot.visit":"Visite o estúdio","foot.hours1":"Ter–sáb · 11h às 19h","foot.hours2":"Dom · 12h às 17h",
+    "foot.concept":"Loja-conceito: a marca, os produtos e as avaliações são fictícios.","foot.kynex":"Site feito pela <a href='https://kynex.kynex-sites.workers.dev' target='_blank' rel='noopener'>KYNEX</a>",
+    "wa.hello":"Oi, Verde Perfumery! Tenho uma dúvida sobre as fragrâncias.",
+    "cart.title":"Sua sacola","cart.empty":"Sua sacola está vazia.","cart.shop":"Ver fragrâncias","cart.sub":"Subtotal","cart.ship":"Frete","cart.free":"Grátis","cart.total":"Total","cart.checkout":"Finalizar pedido","cart.remove":"Remover",
+    "cart.away":"Faltam {x} para o frete grátis","cart.unlocked":"Você ganhou frete grátis!","cart.note":"Impostos calculados no fechamento.",
+    "co.title":"Quase lá","co.name":"Nome completo","co.how":"Entrega","co.ship":"Receber em casa","co.ship.s":"2 a 5 dias úteis","co.pick":"Retirar em Miami","co.pick.s":"Pronto no mesmo dia, grátis",
+    "co.addr":"Endereço de entrega","co.addr.ph":"Rua, cidade, estado e ZIP","co.note":"Cartão de presente (opcional)","co.note.ph":"A gente escreve à mão num cartão",
+    "co.send":"Enviar pedido no WhatsApp","co.fine":"O pedido abre no WhatsApp para confirmarmos estoque e pagamento com você.","co.back":"Voltar para a sacola",
+    "co.err.name":"Digite seu nome.","co.err.addr":"Digite o endereço de entrega.",
+    "done.title":"Pedido enviado!","done.text":"Abrimos o WhatsApp com o seu pedido. Envie a mensagem e a gente responde para combinar pagamento e entrega.","done.cta":"Continuar comprando",
+    "wa.order":"Oi, Verde Perfumery! Quero fazer um pedido:","wa.name":"Nome","wa.delivery":"Entrega","wa.pick":"Retirar em Miami","wa.ship":"Enviar para","wa.note":"Cartão de presente",
+    "pd.notes":"Notas","pd.top":"Saída","pd.heart":"Corpo","pd.base":"Fundo","pd.size":"Tamanho","pd.add":"Adicionar à sacola","pd.reviews":"avaliações",
+    "toast.added":"foi para a sua sacola","toast.view":"Ver sacola",
+    "cat.wish":"Favoritos","shop.nowish":"Nenhum favorito ainda. Toque no coração de uma fragrância para salvá-la aqui.","shop.seeall":"Ver todas as fragrâncias",
+    "wish.added":"foi para os favoritos","wish.removed":"saiu dos favoritos",
+    "pd.share":"Compartilhar","pd.copied":"Link copiado. É só colar para compartilhar.","pd.copy":"Copie este link:",
+    "quiz.eyebrow":"Descubra seu perfume","quiz.q1":"Quando você mais vai usar?","quiz.q2":"Qual destes mais combina com você?","quiz.step":"Pergunta {n} de 2",
+    "q.day":"De dia","q.day.s":"Trabalho, brunch, dia a dia","q.night":"À noite","q.night.s":"Jantares, encontros, festas","q.always":"Todo dia","q.always.s":"Um perfume para tudo",
+    "q.fresh":"Fresco","q.fresh.s":"Limpo, leve, cítrico, mar","q.floral":"Floral","q.floral.s":"Suave, romântico, pétalas","q.warm":"Quente","q.warm.s":"Dourado, doce, âmbar","q.woody":"Amadeirado","q.woody.s":"Profundo, esfumaçado, cedro",
+    "quiz.match":"O seu par perfeito","quiz.also":"Você também pode gostar:","quiz.view":"Ver detalhes","quiz.again":"Recomeçar"
+  }
+};
+
+/* ---------- produtos ---------- */
+/* bottle: shape (classic|round|slim|facet|arch), cap (crystal|gold|dark|orb), c: [cor clara, cor escura] */
+const PRODUCTS = [
+  { id:"nuage", name:"Nuage Rose", word:"NUAGE", cat:"her", fam:"floral", price:145, rating:4.9, reviews:1248, tag:"best", hero:1,
+    bottle:{shape:"classic",cap:"crystal",c:["#FCD6E8","#E393BC"]}, tint:"#F7C9DF",
+    heroNotes:{en:["White peony","Cashmere musk","Bergamot","White amber"],pt:["Peônia branca","Almíscar cashmere","Bergamota","Âmbar branco"]},
+    notes:{en:["Pink pepper, Bergamot","White peony, Rose","Cashmere musk, White amber"],pt:["Pimenta-rosa, Bergamota","Peônia branca, Rosa","Almíscar cashmere, Âmbar branco"]},
+    desc:{en:"A soft-focus floral that feels like first light on a cloud. Dewy peony and rose drift over cashmere musk for a scent that stays close and lasts all day.",
+          pt:"Um floral suave que lembra a primeira luz sobre as nuvens. Peônia e rosa orvalhadas flutuam sobre almíscar cashmere, num perfume que fica perto da pele o dia todo."}},
+  { id:"bleu", name:"Bleu Lumière", word:"BLEU", cat:"unisex", fam:"fresh", price:135, rating:4.8, reviews:964, tag:"best", hero:1,
+    bottle:{shape:"facet",cap:"crystal",c:["#D6E8FB","#86AEE3"]}, tint:"#CFE2FA",
+    heroNotes:{en:["Sea salt","Bergamot","Soft iris","White cedar"],pt:["Sal marinho","Bergamota","Íris","Cedro branco"]},
+    notes:{en:["Sea salt, Bergamot","Neroli, Iris","White cedar, Ambrette"],pt:["Sal marinho, Bergamota","Neroli, Íris","Cedro branco, Ambreta"]},
+    desc:{en:"Clear air after the rain. Sea salt and bergamot open bright, then settle into soft iris and clean cedar. Easy to wear, hard to forget.",
+          pt:"Ar limpo depois da chuva. Sal marinho e bergamota abrem luminosos e depois assentam em íris suave e cedro. Fácil de usar, difícil de esquecer."}},
+  { id:"ambre", name:"Ambre Doré", word:"AMBRE", cat:"him", fam:"warm", price:155, rating:4.9, reviews:812, tag:"new", hero:1,
+    bottle:{shape:"arch",cap:"gold",c:["#FADDB0","#D48F45"]}, tint:"#F8DDB8",
+    heroNotes:{en:["Saffron","Wild honey","Amber","Tonka bean"],pt:["Açafrão","Mel silvestre","Âmbar","Fava tonka"]},
+    notes:{en:["Saffron, Mandarin","Honey, Orange blossom","Amber, Tonka bean"],pt:["Açafrão, Tangerina","Mel, Flor de laranjeira","Âmbar, Fava tonka"]},
+    desc:{en:"Golden hour in a bottle. Saffron and wild honey warm up slowly into amber and tonka. Rich without ever feeling heavy.",
+          pt:"O pôr do sol num frasco. Açafrão e mel silvestre aquecem devagar até virar âmbar e fava tonka. Encorpado sem nunca pesar."}},
+  { id:"lilas", name:"Lilas Nuit", cat:"her", fam:"floral", price:128, rating:4.7, reviews:521,
+    bottle:{shape:"round",cap:"orb",c:["#E6DAF8","#A286D6"]},
+    notes:{en:["Blackcurrant, Pear","Lilac, Violet","Iris, Vanilla musk"],pt:["Cassis, Pera","Lilás, Violeta","Íris, Almíscar de baunilha"]},
+    desc:{en:"Lilac picked at dusk. Juicy blackcurrant meets violet and powdery iris, finished with a whisper of vanilla.",
+          pt:"Lilás colhido ao entardecer. Cassis suculento encontra violeta e íris atalcada, com um toque final de baunilha."}},
+  { id:"bois", name:"Bois Fumé", cat:"him", fam:"woody", price:165, rating:4.8, reviews:690, tag:"best",
+    bottle:{shape:"classic",cap:"dark",c:["#A08C80","#45342F"]},
+    notes:{en:["Black pepper, Cardamom","Smoked cedar, Leather","Vetiver, Oud"],pt:["Pimenta-preta, Cardamomo","Cedro defumado, Couro","Vetiver, Oud"]},
+    desc:{en:"Smoke, wood and a little leather. A deep, quiet scent for cool nights and long dinners.",
+          pt:"Fumaça, madeira e um pouco de couro. Um perfume profundo e discreto para noites frescas e jantares longos."}},
+  { id:"peche", name:"Pêche Velours", cat:"her", fam:"floral", price:118, rating:4.7, reviews:433, tag:"new",
+    bottle:{shape:"arch",cap:"crystal",c:["#FFE0D0","#F09E80"]},
+    notes:{en:["Peach, Mandarin","Osmanthus, Jasmine","Suede, Sandalwood"],pt:["Pêssego, Tangerina","Osmanthus, Jasmim","Camurça, Sândalo"]},
+    desc:{en:"Velvet-soft peach wrapped in osmanthus and jasmine, resting on warm suede. Sunny, sweet and grown-up.",
+          pt:"Pêssego aveludado envolto em osmanthus e jasmim, sobre uma base quente de camurça. Ensolarado, doce e sofisticado."}},
+  { id:"sel", name:"Fleur de Sel", cat:"unisex", fam:"fresh", price:122, rating:4.6, reviews:388,
+    bottle:{shape:"slim",cap:"gold",c:["#E2F2EE","#93CDBF"]},
+    notes:{en:["Sea salt, Lemon","Sage, Driftwood","Musk, Ambergris accord"],pt:["Sal marinho, Limão","Sálvia, Madeira flutuante","Almíscar, Acorde de âmbar-cinza"]},
+    desc:{en:"A walk on Key Biscayne at 7 am. Salty air, crushed sage and sun-bleached wood, bright and effortless.",
+          pt:"Uma caminhada em Key Biscayne às 7h. Brisa salgada, sálvia e madeira clareada pelo sol, luminoso e sem esforço."}},
+  { id:"cedre", name:"Cèdre Blanc", cat:"him", fam:"woody", price:138, rating:4.7, reviews:402,
+    bottle:{shape:"facet",cap:"dark",c:["#ECE7DD","#B3A68F"]},
+    notes:{en:["Grapefruit, Juniper","Cedar, Lavender","Vetiver, White musk"],pt:["Toranja, Zimbro","Cedro, Lavanda","Vetiver, Almíscar branco"]},
+    desc:{en:"Crisp grapefruit and juniper over clean white cedar. The everyday woody that works from desk to dinner.",
+          pt:"Toranja e zimbro sobre cedro branco e limpo. O amadeirado do dia a dia, do escritório ao jantar."}},
+  { id:"neroli", name:"Néroli Soleil", cat:"unisex", fam:"fresh", price:132, rating:4.8, reviews:575,
+    bottle:{shape:"round",cap:"gold",c:["#FFF1BE","#EDBF4E"]},
+    notes:{en:["Neroli, Bitter orange","Orange blossom, Petitgrain","Musk, Benzoin"],pt:["Neroli, Laranja amarga","Flor de laranjeira, Petitgrain","Almíscar, Benjoim"]},
+    desc:{en:"Pure sunshine. Neroli and bitter orange sparkle over a soft musk that keeps glowing well past noon.",
+          pt:"Sol puro. Neroli e laranja amarga brilham sobre um almíscar suave que continua luminoso até depois do almoço."}},
+  { id:"prune", name:"Oud Prune", cat:"unisex", fam:"warm", price:210, rating:4.9, reviews:356, tag:"sig",
+    bottle:{shape:"classic",cap:"crystal",c:["#C06A93","#4B0F33"]},
+    notes:{en:["Plum, Pink pepper","Damask rose, Oud","Patchouli, Vanilla"],pt:["Ameixa, Pimenta-rosa","Rosa damascena, Oud","Patchouli, Baunilha"]},
+    desc:{en:"Our signature. Velvet plum and Damask rose with a thread of oud, aged eight weeks before bottling. Rich, slow and made for evenings.",
+          pt:"Nossa assinatura. Ameixa aveludada e rosa damascena com um toque de oud, maturado por oito semanas antes do envase. Encorpado e feito para a noite."}},
+  { id:"discovery", name:"Discovery Set", cat:"sets", fam:"set", price:38, rating:4.9, reviews:1530, tag:"gift", fixed:{en:"5 × 2 ml",pt:"5 × 2 ml"}, photo:"img/discovery.webp",
+    set:["peche","prune","sel"],
+    notes:{en:["Nuage Rose, Bleu Lumière","Ambre Doré, Bois Fumé","Lilas Nuit"],pt:["Nuage Rose, Bleu Lumière","Ambre Doré, Bois Fumé","Lilas Nuit"]},
+    desc:{en:"Five of our most-loved scents in 2 ml vials. Wear each one for a day or two, then the $38 comes back as credit toward a full bottle.",
+          pt:"Cinco dos nossos perfumes mais amados em frascos de 2 ml. Use cada um por um ou dois dias, e os $38 voltam como crédito na compra de um frasco inteiro."}},
+  { id:"trio", name:"Travel Trio", cat:"sets", fam:"set", price:72, rating:4.8, reviews:610, tag:"gift", fixed:{en:"3 × 10 ml",pt:"3 × 10 ml"}, photo:"img/trio.webp",
+    set:["nuage","bleu","ambre"],
+    notes:{en:["Nuage Rose","Bleu Lumière","Ambre Doré"],pt:["Nuage Rose","Bleu Lumière","Ambre Doré"]},
+    desc:{en:"Our three bestsellers in 10 ml sprays, nested in a keepsake box with a velvet pouch for the road. Sized for carry-on, and a gift that always fits.",
+          pt:"Nossos três mais vendidos em sprays de 10 ml, numa caixa de presente com bolsinha de veludo para a viagem. Cabe na bagagem de mão e é o presente que sempre acerta."}}
+];
+const byId = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
+/* link próprio de cada produto: .../#nuage-rose */
+PRODUCTS.forEach(p => p.slug = p.name.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-"));
+const bySlug = Object.fromEntries(PRODUCTS.map(p => [p.slug, p]));
+PRODUCTS.forEach((p, i) => p.order = i);
+const SIZES = [{ml:30,f:.62},{ml:50,f:1},{ml:100,f:1.5}];
+const sizePrice = (p, ml) => p.fixed ? p.price : Math.round(p.price * SIZES.find(s => s.ml === ml).f);
+
+const COLLECTIONS = [
+  {id:"her", show:"nuage", bg:"linear-gradient(160deg,#F7C7DC 0%,#E7A9C9 55%,#B77399 100%)"},
+  {id:"him", show:"bois", bg:"linear-gradient(160deg,#9AA7C9 0%,#5B5E8A 55%,#2F2747 100%)"},
+  {id:"unisex", show:"bleu", bg:"linear-gradient(160deg,#C8DCF6 0%,#A9B9E8 55%,#7D86C4 100%)"},
+  {id:"sets", show:"trio", bg:"linear-gradient(160deg,#F9DCC7 0%,#E6B4A0 55%,#B47B73 100%)"}
+];
+
+/* ---------- estado ---------- */
+const store = {
+  get(k, d){ try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch(e){ return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+let lang = store.get("vp-lang", "en") === "pt" ? "pt" : "en";
+let cart = store.get("vp-cart", []).filter(l => byId[l.id] && l.qty > 0);
+let wish = new Set(store.get("vp-wish", []));
+let filter = "all", sortBy = "feat";
+let view = "bag", co = {name:"", how:"ship", addr:"", note:""};
+const t = k => (I18N[lang][k] ?? I18N.en[k] ?? k);
+const $ = s => document.querySelector(s);
+const money = n => "$" + n.toLocaleString("en-US");
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---------- frascos (fotos recortadas em img/bottles, 300×450) ---------- */
+function bottleSVG(p, cls = ""){
+  if (p.photo) return `<img class="b photo ${cls}" src="${p.photo}" alt="" loading="lazy" decoding="async">`;
+  if (p.set) return setSVG(p, cls);
+  return `<svg class="b ${cls}" viewBox="0 0 300 450" aria-hidden="true" focusable="false"><image href="img/bottles/${p.id}.webp" width="300" height="450"/></svg>`;
+}
+/* fundos por perfume (img/scenes, 896×1200): centro do topo do pedestal em px */
+const SCENES = {nuage:[447,919], bleu:[447,925], ambre:[446,879], lilas:[448,933], bois:[445,942], peche:[448,917], sel:[441,869], cedre:[448,905], neroli:[452,902], prune:[460,955]};
+function sceneHTML(p){
+  const s = SCENES[p.id]; if (!s) return "";
+  return `<div class="scn" style="--x:${(s[0] / 896 * 100).toFixed(2)}%;--y:${((1200 - s[1]) / 1200 * 100).toFixed(2)}%"><img class="scene" src="img/scenes/${p.id}.webp" alt="" decoding="async"><span class="contact"></span>${bottleSVG(p)}</div>`;
+}
+function setSVG(p, cls){
+  const [a, b, c] = p.set.map(id => byId[id]);
+  const inner = (q, x, y, w, r) => `<g transform="rotate(${r} ${x + w/2} ${y + w*.75})">` + bottleSVG(q).replace('<svg class="b "', `<svg x="${x}" y="${y}" width="${w}" height="${w * 1.5}"`) + "</g>";
+  return `<svg class="b set ${cls}" viewBox="0 0 300 260" aria-hidden="true" focusable="false">
+    <rect x="30" y="196" width="240" height="56" rx="10" fill="#fff" opacity=".85"/>
+    <rect x="30" y="196" width="240" height="10" rx="5" fill="#E9DCEB"/>
+    <text x="150" y="234" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-weight="600" font-size="16" letter-spacing="4" fill="#4B0F33">VERDE</text>
+    ${inner(a, 18, 70, 92, -8)}${inner(c, 190, 70, 92, 8)}${inner(b, 92, 30, 116, 0)}
+  </svg>`;
+}
+/* ---------- i18n ---------- */
+function applyLang(){
+  document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
+  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
+  document.querySelectorAll("[data-i18n-html]").forEach(el => el.innerHTML = t(el.dataset.i18nHtml));
+  document.querySelectorAll("[data-i18n-alt]").forEach(el => el.alt = t(el.dataset.i18nAlt));
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => el.placeholder = t(el.dataset.i18nPh));
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => el.setAttribute("aria-label", t(el.dataset.i18nAria)));
+  document.querySelectorAll("[data-lang]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
+  $("#waContact").href = `https://wa.me/${WA}?text=${encodeURIComponent(t("wa.hello"))}`;
+  renderHero(false); renderCols(); renderTabs(); renderGrid(); renderCart();
+  if (modalKind === "product") openProduct(modalId, true);
+  if (modalKind === "quiz") renderQuiz();
+}
+document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => {
+  lang = b.dataset.lang; store.set("vp-lang", lang); applyLang();
+}));
+
+/* ---------- hero ---------- */
+const HERO = PRODUCTS.filter(p => p.hero);
+let hi = 0, heroTimer = null;
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function renderHero(animate){
+  const p = HERO[hi], hero = $("#hero");
+  const paint = () => {
+    $("#heroWord").textContent = p.word;
+    $("#heroNo").textContent = `No. 0${hi + 1} · ${t("hero.no")}`;
+    $("#heroNotes").innerHTML = p.heroNotes[lang].map(n => `<li>${esc(n)}</li>`).join("");
+    $("#heroSize").textContent = "50 ml";
+    $("#heroPrice").textContent = money(p.price);
+    $("#heroName").textContent = `${p.name} ${t("hero.no")}`;
+    $("#heroDesc").textContent = p.desc[lang];
+    $("#heroBottle").innerHTML = bottleSVG(p);
+    hero.style.setProperty("--tint", p.tint);
+    $("#heroThumbs").innerHTML = HERO.map((q, i) => `<button class="thumb" type="button" data-hi="${i}" aria-current="${i === hi}" aria-label="${esc(q.name)}">${bottleSVG(q)}<span>${esc(q.name)}</span></button>`).join("");
+  };
+  if (!animate || reduce) { paint(); return; }
+  hero.classList.add("fading"); $("#stage").classList.add("out");
+  setTimeout(() => { paint(); hero.classList.remove("fading"); $("#stage").classList.remove("out"); }, 420);
+}
+function goHero(i){ hi = (i + HERO.length) % HERO.length; renderHero(true); }
+function autoHero(){ clearInterval(heroTimer); if (!reduce) heroTimer = setInterval(() => goHero(hi + 1), 7000); }
+$("#heroThumbs").addEventListener("click", e => { const b = e.target.closest("[data-hi]"); if (b && +b.dataset.hi !== hi) { goHero(+b.dataset.hi); autoHero(); } });
+$("#heroPrev").addEventListener("click", () => { goHero(hi - 1); autoHero(); });
+$("#heroNext").addEventListener("click", () => { goHero(hi + 1); autoHero(); });
+$("#heroAdd").addEventListener("click", () => addToCart(HERO[hi].id, 50, 1));
+$("#hero").addEventListener("mouseenter", () => clearInterval(heroTimer));
+$("#hero").addEventListener("mouseleave", autoHero);
+let tx = null;
+$("#hero").addEventListener("touchstart", e => tx = e.touches[0].clientX, {passive:true});
+$("#hero").addEventListener("touchend", e => { if (tx == null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) { goHero(hi + (dx < 0 ? 1 : -1)); autoHero(); } tx = null; });
+
+/* ---------- coleções ---------- */
+function renderCols(){
+  $("#cols").innerHTML = COLLECTIONS.map(c => `<button class="col${SCENES[c.show] ? " has-scene" : ""}" type="button" data-filter="${c.id}">
+    <span class="bg" style="background:${c.bg}"></span>${SCENES[c.show] ? sceneHTML(byId[c.show]) : bottleSVG(byId[c.show])}
+    <span class="col-foot"><span><h3>${t("cat." + c.id)}</h3><p>${t("cat." + c.id + ".t")}</p></span>
+    <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M14 6l6 6-6 6"/></svg></span></span></button>`).join("");
+}
+
+/* ---------- loja ---------- */
+function renderTabs(){
+  const tabs = ["all","her","him","unisex","sets"];
+  if (wish.size || filter === "wish") tabs.push("wish");
+  $("#tabs").innerHTML = tabs.map(c => `<button class="tab${c === "wish" ? " tab-wish" : ""}" type="button" data-tab="${c}" aria-pressed="${c === filter}">${c === "wish" ? `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 20s-7-4.4-9.3-9A5 5 0 0 1 12 6a5 5 0 0 1 9.3 5c-2.3 4.6-9.3 9-9.3 9z"/></svg>${t("cat.wish")} (${wish.size})` : t("cat." + c)}</button>`).join("");
+}
+function card(p, i){
+  const from = !p.fixed;
+  return `<article class="card" style="animation-delay:${i * 40}ms">
+    <div class="card-img${SCENES[p.id] ? " has-scene" : ""}" data-open="${p.id}" style="background:linear-gradient(165deg,${(p.bottle ? p.bottle.c[0] : "#F4E2EC")}aa,#fff 85%)">
+      ${SCENES[p.id] ? sceneHTML(p) : bottleSVG(p)}
+      ${p.tag ? `<span class="tag">${t("tag." + p.tag)}</span>` : ""}
+    </div>
+    <button class="heart" type="button" data-wish="${p.id}" aria-pressed="${wish.has(p.id)}" aria-label="${t("aria.wish")}: ${esc(p.name)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20s-7-4.4-9.3-9A5 5 0 0 1 12 6a5 5 0 0 1 9.3 5c-2.3 4.6-9.3 9-9.3 9z"/></svg></button>
+    <div class="card-body">
+      <h3><button type="button" data-open="${p.id}" style="font:inherit;color:inherit;text-align:left">${esc(p.name)}</button></h3>
+      <span class="fam">${t("fam." + p.fam)}${p.fixed ? " · " + p.fixed[lang] : ""}</span>
+      <span class="stars"><b>★★★★★</b>${p.rating} (${p.reviews.toLocaleString("en-US")})</span>
+      <div class="card-foot">
+        <span class="price">${money(p.price)}${from ? `<small>50 ml</small>` : ""}</span>
+        <button class="add" type="button" data-add="${p.id}" aria-label="${t("aria.add")}: ${esc(p.name)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg></button>
+      </div>
+    </div>
+  </article>`;
+}
+function renderGrid(){
+  let list = PRODUCTS.filter(p => filter === "all" || (filter === "wish" ? wish.has(p.id) : p.cat === filter));
+  if (sortBy === "low") list.sort((a, b) => a.price - b.price);
+  else if (sortBy === "high") list.sort((a, b) => b.price - a.price);
+  else if (sortBy === "rate") list.sort((a, b) => b.rating - a.rating || b.reviews - a.reviews);
+  $("#grid").innerHTML = list.length ? list.map(card).join("")
+    : `<div class="grid-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20s-7-4.4-9.3-9A5 5 0 0 1 12 6a5 5 0 0 1 9.3 5c-2.3 4.6-9.3 9-9.3 9z"/></svg><p>${t("shop.nowish")}</p><button class="btn btn-line" type="button" data-tab="all">${t("shop.seeall")}</button></div>`;
+}
+function setFilter(f, scroll){
+  filter = f; renderTabs(); renderGrid();
+  if (scroll) $("#shop").scrollIntoView({behavior: reduce ? "auto" : "smooth"});
+}
+$("#shop").addEventListener("click", e => { const b = e.target.closest("[data-tab]"); if (b) setFilter(b.dataset.tab); });
+$("#sort").addEventListener("change", e => { sortBy = e.target.value; renderGrid(); });
+document.addEventListener("click", e => {
+  const f = e.target.closest("[data-filter]");
+  if (f) { e.preventDefault(); closeMenu(); setFilter(f.dataset.filter, true); return; }
+  const o = e.target.closest("[data-open]");
+  if (o) { openProduct(o.dataset.open); return; }
+  const a = e.target.closest("[data-add]");
+  if (a) { const p = byId[a.dataset.add]; addToCart(p.id, p.fixed ? 0 : 50, 1); return; }
+  const w = e.target.closest("[data-wish]");
+  if (w) {
+    const id = w.dataset.wish, on = !wish.has(id);
+    on ? wish.add(id) : wish.delete(id); store.set("vp-wish", [...wish]);
+    w.setAttribute("aria-pressed", on); renderTabs();
+    if (filter === "wish") renderGrid();
+    toast(`${byId[id].name} ${t(on ? "wish.added" : "wish.removed")}`, false);
+  }
+});
+
+/* ---------- sacola ---------- */
+const lineKey = (id, ml) => id + "|" + ml;
+function addToCart(id, ml, qty){
+  const p = byId[id]; if (p.fixed) ml = 0;
+  const l = cart.find(x => x.id === id && x.ml === ml);
+  l ? l.qty = Math.min(20, l.qty + qty) : cart.push({id, ml, qty});
+  saveCart(); view = "bag"; renderCart();
+  const badge = $("#cartCount"); badge.classList.remove("pop"); void badge.offsetWidth; badge.classList.add("pop");
+  toast(`${p.name}${ml ? " · " + ml + " ml" : ""} ${t("toast.added")}`);
+}
+function saveCart(){ store.set("vp-cart", cart); }
+const subtotal = () => cart.reduce((s, l) => s + sizePrice(byId[l.id], l.ml) * l.qty, 0);
+const count = () => cart.reduce((s, l) => s + l.qty, 0);
+function renderCart(){
+  const n = count(), sub = subtotal(), ship = sub >= FREE_SHIP || co.how === "pick" ? 0 : SHIP_FEE;
+  const badge = $("#cartCount"); badge.textContent = n; badge.classList.toggle("on", n > 0);
+  const pct = Math.min(100, sub / FREE_SHIP * 100);
+  $("#shipBar").innerHTML = `${sub >= FREE_SHIP ? t("cart.unlocked") : t("cart.away").replace("{x}", money(FREE_SHIP - sub))}<div class="track"><div class="fill" style="width:${pct}%"></div></div>`;
+  $("#shipBar").style.display = n && view !== "done" ? "" : "none";
+  const body = $("#drBody"), foot = $("#drFoot");
+  if (view === "done") {
+    body.innerHTML = `<div class="done"><div class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div><h3>${t("done.title")}</h3><p>${t("done.text")}</p><button class="btn btn-plum" type="button" id="doneBtn">${t("done.cta")}</button></div>`;
+    foot.style.display = "none"; return;
+  }
+  if (!n) {
+    view = "bag";
+    body.innerHTML = `<div class="empty">${bottleSVG(byId.lilas)}<p>${t("cart.empty")}</p><button class="btn btn-plum" type="button" id="emptyBtn">${t("cart.shop")}</button></div>`;
+    foot.style.display = "none"; return;
+  }
+  foot.style.display = "";
+  const sums = `<div class="sum"><span>${t("cart.sub")}</span><span>${money(sub)}</span></div>
+    <div class="sum"><span>${t("cart.ship")}</span><span>${ship ? money(ship) : t("cart.free")}</span></div>
+    <div class="sum total"><span>${t("cart.total")}</span><span>${money(sub + ship)}</span></div>`;
+  if (view === "bag") {
+    body.innerHTML = cart.map(l => {
+      const p = byId[l.id], price = sizePrice(p, l.ml);
+      return `<div class="line">
+        <div class="thumb-b" style="background:linear-gradient(165deg,${p.bottle ? p.bottle.c[0] : "#F4E2EC"},#fff)">${bottleSVG(p)}</div>
+        <div><h3>${esc(p.name)}</h3><div class="meta">${l.ml ? l.ml + " ml" : p.fixed[lang]} · ${money(price)}</div>
+          <div class="qty"><button type="button" data-q="${lineKey(l.id, l.ml)}" data-d="-1" aria-label="−">−</button><span>${l.qty}</span><button type="button" data-q="${lineKey(l.id, l.ml)}" data-d="1" aria-label="+">+</button></div></div>
+        <div class="right"><span>${money(price * l.qty)}</span><button class="rm" type="button" data-rm="${lineKey(l.id, l.ml)}">${t("cart.remove")}</button></div>
+      </div>`;
+    }).join("");
+    foot.innerHTML = `${sums}<button class="btn btn-plum" type="button" id="toCheckout">${t("cart.checkout")}</button><p class="fine">${t("cart.note")}</p>`;
+  } else {
+    body.innerHTML = `<form class="co" id="coForm" novalidate>
+      <h3 style="font-size:28px;margin-top:14px">${t("co.title")}</h3>
+      <label for="coName">${t("co.name")}</label><input id="coName" autocomplete="name" value="${esc(co.name)}"><div class="err" id="errName"></div>
+      <label>${t("co.how")}</label>
+      <div class="seg"><button type="button" data-how="ship" aria-pressed="${co.how === "ship"}">${t("co.ship")}<small>${t("co.ship.s")}</small></button><button type="button" data-how="pick" aria-pressed="${co.how === "pick"}">${t("co.pick")}<small>${t("co.pick.s")}</small></button></div>
+      ${co.how === "ship" ? `<label for="coAddr">${t("co.addr")}</label><textarea id="coAddr" autocomplete="street-address" placeholder="${t("co.addr.ph")}">${esc(co.addr)}</textarea><div class="err" id="errAddr"></div>` : ""}
+      <label for="coNote">${t("co.note")}</label><input id="coNote" placeholder="${t("co.note.ph")}" value="${esc(co.note)}">
+      <button class="back" type="button" id="toBag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12H5M10 6l-6 6 6 6"/></svg>${t("co.back")}</button>
+    </form>`;
+    foot.innerHTML = `${sums}<button class="btn btn-plum" type="button" id="sendOrder"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>${t("co.send")}</button><p class="fine">${t("co.fine")}</p>`;
+  }
+}
+function readCo(){
+  const g = id => { const el = document.getElementById(id); return el ? el.value.trim() : null; };
+  if (g("coName") !== null) co.name = g("coName");
+  if (g("coAddr") !== null) co.addr = g("coAddr");
+  if (g("coNote") !== null) co.note = g("coNote");
+}
+$("#drawer").addEventListener("click", e => {
+  const q = e.target.closest("[data-q]");
+  if (q) { const [id, ml] = q.dataset.q.split("|"); const l = cart.find(x => x.id === id && x.ml === +ml); l.qty += +q.dataset.d; if (l.qty < 1) cart.splice(cart.indexOf(l), 1); l.qty = Math.min(20, l.qty); saveCart(); renderCart(); return; }
+  const r = e.target.closest("[data-rm]");
+  if (r) { const [id, ml] = r.dataset.rm.split("|"); cart = cart.filter(x => !(x.id === id && x.ml === +ml)); saveCart(); renderCart(); return; }
+  const h = e.target.closest("[data-how]");
+  if (h) { readCo(); co.how = h.dataset.how; renderCart(); return; }
+  const id = e.target.closest("button")?.id;
+  if (id === "toCheckout") { view = "co"; renderCart(); $("#coName").focus(); }
+  else if (id === "toBag") { readCo(); view = "bag"; renderCart(); }
+  else if (id === "emptyBtn" || id === "doneBtn") { view = "bag"; closeCart(); renderCart(); setFilter("all", true); }
+  else if (id === "sendOrder") sendOrder();
+});
+function sendOrder(){
+  readCo();
+  let ok = true;
+  $("#errName").textContent = co.name ? "" : (ok = false, t("co.err.name"));
+  if (co.how === "ship") $("#errAddr").textContent = co.addr ? "" : (ok = false, t("co.err.addr"));
+  if (!ok) { (co.name ? $("#coAddr") : $("#coName")).focus(); return; }
+  const sub = subtotal(), ship = sub >= FREE_SHIP || co.how === "pick" ? 0 : SHIP_FEE;
+  const lines = cart.map(l => { const p = byId[l.id]; return `• ${l.qty}× ${p.name} — ${l.ml ? l.ml + " ml" : p.fixed[lang]} — ${money(sizePrice(p, l.ml) * l.qty)}`; });
+  const msg = [t("wa.order"), "", ...lines, "",
+    `${t("cart.sub")}: ${money(sub)}`, `${t("cart.ship")}: ${ship ? money(ship) : t("cart.free")}`, `*${t("cart.total")}: ${money(sub + ship)}*`, "",
+    `${t("wa.name")}: ${co.name}`,
+    `${t("wa.delivery")}: ${co.how === "pick" ? t("wa.pick") : t("wa.ship") + " " + co.addr}`,
+    co.note ? `${t("wa.note")}: ${co.note}` : ""].filter((x, i, arr) => x !== "" || arr[i - 1] !== "").join("\n").trim();
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+  cart = []; saveCart(); co = {name:"", how:"ship", addr:"", note:""}; view = "done"; renderCart();
+}
+
+/* ---------- gaveta / modal: abrir e fechar ---------- */
+let lastFocus = null;
+function lockScroll(on){ document.body.classList.toggle("lock", on); }
+function openCart(){
+  lastFocus = document.activeElement; if (view === "done") view = "bag"; renderCart(); $("#toast").classList.remove("show");
+  $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden", "false"); $("#scrim").classList.add("open"); lockScroll(true);
+  setTimeout(() => $("#drClose").focus(), 50);
+}
+function closeCart(){
+  $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden", "true");
+  if (!$("#modal").classList.contains("open")) { $("#scrim").classList.remove("open"); lockScroll(false); }
+  lastFocus?.focus?.();
+}
+$("#cartBtn").addEventListener("click", openCart);
+$("#drClose").addEventListener("click", closeCart);
+$("#scrim").addEventListener("click", () => { closeCart(); closeModal(); });
+
+let modalKind = null, modalId = null, pdSize = 50, pdQty = 1;
+function showModal(){
+  if (!$("#modal").classList.contains("open")) lastFocus = document.activeElement;
+  $("#modal").classList.add("open"); $("#modal").setAttribute("aria-hidden", "false"); $("#scrim").classList.add("open"); lockScroll(true);
+  setTimeout(() => $("#modalClose").focus(), 50);
+}
+function closeModal(){
+  if (!modalKind) return;
+  modalKind = null;
+  if (bySlug[location.hash.slice(1)]) history.replaceState(null, "", location.pathname + location.search);
+  $("#modal").classList.remove("open"); $("#modal").setAttribute("aria-hidden", "true");
+  if (!$("#drawer").classList.contains("open")) { $("#scrim").classList.remove("open"); lockScroll(false); }
+  lastFocus?.focus?.();
+}
+$("#modalClose").addEventListener("click", closeModal);
+$("#modal").addEventListener("click", e => { if (e.target === $("#modal")) closeModal(); });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { if (modalKind) closeModal(); else if ($("#drawer").classList.contains("open")) closeCart(); else closeMenu(); }
+  if (e.key === "Tab") {
+    const box = modalKind ? $("#modalBox") : $("#drawer").classList.contains("open") ? $("#drawer") : null;
+    if (!box) return;
+    const f = [...box.querySelectorAll("button,input,select,textarea,a[href]")].filter(el => !el.disabled && el.offsetParent !== null);
+    if (!f.length) return;
+    if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+    else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+  }
+});
+
+/* ---------- página do produto ---------- */
+function openProduct(id, keep){
+  const p = byId[id]; if (!p) return;
+  if (!keep || modalId !== id) { pdSize = 50; pdQty = 1; }
+  modalKind = "product"; modalId = id;
+  $("#modal").setAttribute("aria-label", p.name);
+  const price = sizePrice(p, pdSize);
+  const [c1, c2] = p.bottle ? p.bottle.c : ["#F4E2EC", "#D9C2E6"];
+  $("#modalContent").innerHTML = `<div class="pd">
+    ${SCENES[p.id] ? `<div class="pd-art has-scene" style="background:${c1}">${sceneHTML(p)}</div>` : `<div class="pd-art" style="background:linear-gradient(170deg,#A9C6EE 0%,${c1} 60%,#fff 100%)"><div class="sky"><div class="cloud" style="--w:260px;left:-40px;top:40px;--d:50s;--dx:50px"><i></i></div><div class="cloud" style="--w:220px;right:-30px;top:120px;--d:60s;--dx:-40px;--o:.75"><i></i></div><div class="bank"></div></div>${bottleSVG(p)}</div>`}
+    <div class="pd-info">
+      <span class="fam">${t("fam." + p.fam)}</span>
+      <h2>${esc(p.name)}</h2>
+      <div class="pd-meta"><span class="stars"><b>★★★★★</b>${p.rating} · ${p.reviews.toLocaleString("en-US")} ${t("pd.reviews")}</span>
+        <button class="share" type="button" id="pdShare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M12 3v12M7 8l5-5 5 5"/></svg>${t("pd.share")}</button></div>
+      <p class="lead">${esc(p.desc[lang])}</p>
+      <div class="opt-label">${t("pd.notes")}</div>
+      <div class="pyr">${["top","heart","base"].map((k, i) => `<div><span>${t("pd." + k)}</span>${esc(p.notes[lang][i])}</div>`).join("")}</div>
+      ${p.fixed ? "" : `<div class="opt-label">${t("pd.size")}</div><div class="sizes">${SIZES.map(s => `<button type="button" data-size="${s.ml}" aria-pressed="${s.ml === pdSize}">${s.ml} ml<small>${money(sizePrice(p, s.ml))}</small></button>`).join("")}</div>`}
+      <div class="buy">
+        <div class="qty"><button type="button" data-pq="-1" aria-label="−">−</button><span id="pdQty">${pdQty}</span><button type="button" data-pq="1" aria-label="+">+</button></div>
+        <button class="btn btn-plum" type="button" id="pdAdd">${t("pd.add")} · ${money(price * pdQty)}</button>
+      </div>
+    </div>
+  </div>`;
+  showModal();
+  if (location.hash !== "#" + p.slug) history.replaceState(null, "", "#" + p.slug);
+}
+function shareProduct(){
+  const p = byId[modalId], url = location.origin + location.pathname + "#" + p.slug;
+  if (navigator.share) { navigator.share({title: `${p.name} · Verde Perfumery`, url}).catch(() => {}); return; }
+  const done = () => toast(t("pd.copied"), false);
+  if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, () => prompt(t("pd.copy"), url));
+  else prompt(t("pd.copy"), url);
+}
+function openFromHash(){
+  const p = bySlug[decodeURIComponent(location.hash.slice(1))];
+  if (p && !(modalKind === "product" && modalId === p.id)) openProduct(p.id);
+}
+addEventListener("hashchange", openFromHash);
+$("#modalContent").addEventListener("click", e => {
+  if (modalKind !== "product") return;
+  const s = e.target.closest("[data-size]");
+  if (s) { pdSize = +s.dataset.size; openProduct(modalId, true); $(`[data-size="${pdSize}"]`).focus(); return; }
+  const q = e.target.closest("[data-pq]");
+  if (q) { pdQty = Math.max(1, Math.min(20, pdQty + +q.dataset.pq)); openProduct(modalId, true); return; }
+  if (e.target.closest("#pdShare")) { shareProduct(); return; }
+  if (e.target.closest("#pdAdd")) { addToCart(modalId, pdSize, pdQty); closeModal(); }
+});
+
+/* ---------- quiz ---------- */
+let quiz = {step:1, when:null, fam:null};
+const Q1 = [["day","#FCE7B2"],["night","#5B4A7E"],["always","#F4CFE2"]];
+const Q2 = [["fresh","#CFE2FA"],["floral","#F6CBDD"],["warm","#F5CF96"],["woody","#9D8574"]];
+function renderQuiz(){
+  modalKind = "quiz";
+  $("#modal").setAttribute("aria-label", t("quiz.eyebrow"));
+  let html = `<div class="quiz"><p class="eyebrow">${t("quiz.eyebrow")}</p>`;
+  if (quiz.step < 3) {
+    const opts = quiz.step === 1 ? Q1 : Q2, key = quiz.step === 1 ? "when" : "fam";
+    html += `<h2>${t(quiz.step === 1 ? "quiz.q1" : "quiz.q2")}</h2><p class="step">${t("quiz.step").replace("{n}", quiz.step)}</p>
+      <div class="choices">${opts.map(([v, col]) => `<button class="choice" type="button" data-${key}="${v}"><i style="background:${col}"></i><b>${t("q." + v)}</b><span>${t("q." + v + ".s")}</span></button>`).join("")}</div>`;
+  } else {
+    const ranked = PRODUCTS.filter(p => !p.set).map(p => {
+      let s = p.fam === quiz.fam ? 10 : 0;
+      if (quiz.when === "day" && (p.fam === "fresh" || p.fam === "floral")) s += 2;
+      if (quiz.when === "night" && (p.fam === "warm" || p.fam === "woody")) s += 2;
+      if (quiz.when === "always") s += p.reviews / 1000;
+      return {p, s: s + p.rating};
+    }).sort((a, b) => b.s - a.s).map(x => x.p);
+    const [m, ...rest] = ranked;
+    html += `<h2>${t("quiz.match")}</h2><p class="step">&nbsp;</p>
+      <div class="result"><div class="art" style="background:linear-gradient(165deg,${m.bottle.c[0]},#fff)">${bottleSVG(m)}</div>
+      <div><span class="fam" style="text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:var(--plum-2)">${t("fam." + m.fam)}</span><h3>${esc(m.name)}</h3><p>${esc(m.desc[lang])}</p>
+        <div class="acts"><button class="btn btn-plum" type="button" data-qadd="${m.id}">${t("pd.add")} · ${money(m.price)}</button><button class="btn btn-line" type="button" data-qview="${m.id}">${t("quiz.view")}</button></div>
+        <p class="alts">${t("quiz.also")} ${rest.slice(0, 2).map(p => `<button type="button" data-qview="${p.id}">${esc(p.name)}</button>`).join(" · ")}<br><button type="button" data-qreset>${t("quiz.again")}</button></p>
+      </div></div>`;
+  }
+  $("#modalContent").innerHTML = html + "</div>";
+}
+$("#quizBtn").addEventListener("click", () => { quiz = {step:1, when:null, fam:null}; renderQuiz(); showModal(); });
+$("#modalContent").addEventListener("click", e => {
+  if (modalKind !== "quiz") return;
+  const w = e.target.closest("[data-when]"), f = e.target.closest("[data-fam]");
+  if (w) { quiz.when = w.dataset.when; quiz.step = 2; renderQuiz(); $(".choice")?.focus(); return; }
+  if (f) { quiz.fam = f.dataset.fam; quiz.step = 3; renderQuiz(); return; }
+  const a = e.target.closest("[data-qadd]"); if (a) { addToCart(a.dataset.qadd, 50, 1); closeModal(); return; }
+  const v = e.target.closest("[data-qview]"); if (v) { openProduct(v.dataset.qview); return; }
+  if (e.target.closest("[data-qreset]")) { quiz = {step:1, when:null, fam:null}; renderQuiz(); }
+});
+
+/* ---------- toast ---------- */
+let toastT;
+function toast(msg, withBag = true){
+  $("#toastText").textContent = msg; $("#toastBtn").hidden = !withBag; $("#toast").classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(() => $("#toast").classList.remove("show"), 3200);
+}
+$("#toastBtn").addEventListener("click", () => { $("#toast").classList.remove("show"); openCart(); });
+
+/* ---------- menu celular, nav, newsletter ---------- */
+function openMenu(){ $("#mnav").classList.add("open"); $("#mnav").setAttribute("aria-hidden", "false"); $("#burger").setAttribute("aria-expanded", "true"); lockScroll(true); }
+function closeMenu(){ if (!$("#mnav").classList.contains("open")) return; $("#mnav").classList.remove("open"); $("#mnav").setAttribute("aria-hidden", "true"); $("#burger").setAttribute("aria-expanded", "false"); lockScroll(false); }
+$("#burger").addEventListener("click", openMenu);
+$("#mnavClose").addEventListener("click", closeMenu);
+$("#mnav").addEventListener("click", e => { if (e.target === $("#mnav") || e.target.closest("a")) closeMenu(); });
+const onScroll = () => $("#nav").classList.toggle("scrolled", scrollY > 30);
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+$("#newsForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const v = $("#newsMail").value.trim(), ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+  $("#newsMsg").textContent = ok ? t("news.ok") : t("news.bad");
+  if (ok) $("#newsMail").value = "";
+});
+
+/* ---------- início ---------- */
+$("#sigBottle").innerHTML = bottleSVG(byId.prune);
+applyLang();
+autoHero();
+openFromHash();
+</script>
+</body>
+</html>

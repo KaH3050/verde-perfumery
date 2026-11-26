@@ -1,0 +1,8 @@
+{
+  // Verde Perfumery (projeto-conceito da KYNEX): site estático desta pasta.
+  "name": "verde-perfumery",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "."
+  }
+}
